@@ -1,0 +1,6 @@
+# Adoption of organic seed {#ch1-adoption}
+\chaptermark{adoption}
+
+```{r test-main, child = '~/Documents/Davis/R-Projects/organicseed_adoption/code/manuscript.Rmd'}
+```
+

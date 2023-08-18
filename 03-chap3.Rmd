@@ -1,0 +1,6 @@
+# Conditions explaining IS structure {#process}
+\chaptermark{process}
+
+
+```{r test-main, child = '~/Documents/Davis/R-Projects/osisn_processes/manuscript.Rmd'}
+```

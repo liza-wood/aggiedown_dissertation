@@ -1,0 +1,16 @@
+{
+    "dialog-state": {
+        "query": "UCD thesis fields",
+        "path": "/Users/lizawood/Documents/Davis/R-Projects/aggiedown_dissertation",
+        "regex": false,
+        "caseSensitive": false,
+        "wholeWord": false,
+        "filePatterns": [],
+        "useGitGrep": false,
+        "excludeGitIgnore": true,
+        "excludeFilePatterns": [],
+        "resultsCount": 2,
+        "errorCount": 0,
+        "replaceErrors": ""
+    }
+}
