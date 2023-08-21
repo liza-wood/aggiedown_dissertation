@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020) (preloaded format=xelatex 2020.4.7)  18 AUG 2023 15:14
+This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020) (preloaded format=xelatex 2020.4.7)  21 AUG 2023 23:24
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -668,141 +668,288 @@ File: se-ascii-print.def 2019/11/29 v1.12 stringenc: Printable ASCII characters
 \tf@toc=\write5
 \openout5 = `thesis.toc'.
 
-[7] (./thesis.lot)
+[7] (./thesis.lot
+Underfull \hbox (badness 2302) in paragraph at lines 9--9
+ [][] [][][]\TU/lmr/m/n/12 (#tab:table3.2)Operationalization of innovation reso
+urce subsystems 
+ []
+
+)
 \tf@lot=\write6
 \openout6 = `thesis.lot'.
 
 [8
 
-] (./thesis.lof)
+] (./thesis.lof [9
+
+])
 \tf@lof=\write7
 \openout7 = `thesis.lof'.
 
-[9
-
-] [1
+[10] [1
 
 
 ]
 Chapter 1.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
 [2
 
-]
-Underfull \vbox (badness 2111) has occurred while \output is active []
+] [3] [4]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[3]
-File: thesis_files/figure-latex/march3plot-1.pdf Graphic file (type pdf)
-<use thesis_files/figure-latex/march3plot-1.pdf>
-[4]
-Chapter 2.
+[5] [6] [7] [8] [9] [10]
+Underfull \vbox (badness 4608) has occurred while \output is active []
+
+[11]
+File: ../organicseed_adoption/figures/figure1.png Graphic file (type bmp)
+<../organicseed_adoption/figures/figure1.png>
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[5
+[12] [13] [14] [15] [16]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[17] [18]
+File: ../organicseed_adoption/figures/figure2.png Graphic file (type bmp)
+<../organicseed_adoption/figures/figure2.png>
+[19] [20]
+Underfull \vbox (badness 4608) has occurred while \output is active []
+
+[21]
+File: ../organicseed_adoption/figures/figure3.png Graphic file (type bmp)
+<../organicseed_adoption/figures/figure3.png>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[22] [23] [24] [25] [26] [27]
+Chapter 2.
+[28
 
 ]
-File: thesis_files/figure-latex/unnamed-chunk-5-1.pdf Graphic file (type pdf)
-<use thesis_files/figure-latex/unnamed-chunk-5-1.pdf>
+Underfull \vbox (badness 4608) has occurred while \output is active []
 
-Overfull \hbox (8.02887pt too wide) in paragraph at lines 300--301
+[29]
+Underfull \vbox (badness 4608) has occurred while \output is active []
+
+[30]
+Underfull \vbox (badness 4608) has occurred while \output is active []
+
+[31] [32] [33]
+Underfull \vbox (badness 4608) has occurred while \output is active []
+
+[34] [35]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[36]
+File: ../osisn_spatial/figures/figure1.jpeg Graphic file (type bmp)
+<../osisn_spatial/figures/figure1.jpeg>
+
+Underfull \vbox (badness 4608) has occurred while \output is active []
+
+[37] [38] [39]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[40] [41] [42] [43]
+Underfull \vbox (badness 4608) has occurred while \output is active []
+
+[44]
+Overfull \hbox (448.5646pt too wide) in paragraph at lines 1733--1742
  [][] 
  []
 
-[6] [7]
-Chapter 3.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[8
+[45] [46] [47]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-]
+[48] [49] [50]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[51]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[52]
+File: ../osisn_spatial/figures/figure3.png Graphic file (type bmp)
+<../osisn_spatial/figures/figure3.png>
+[53] [54]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[55]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[56]
+Underfull \vbox (badness 1117) has occurred while \output is active []
+
+[57]
+Underfull \vbox (badness 4608) has occurred while \output is active []
+
+[58] [59]
+Underfull \hbox (badness 2828) in paragraph at lines 2215--2216
+\TU/lmr/m/n/12 Access to Certified Organic Market.” https://www.vegetables.baye
+r.com/us/en-
+ []
+
+[60] [61] [62] [63]
+Overfull \hbox (48.25922pt too wide) in paragraph at lines 2373--2374
+\TU/lmr/m/n/12 ment.” \TU/lmr/m/it/12 Science and Public Policy \TU/lmr/m/n/12 
+44(6). https://academic.oup.com/spp/article/44/6/739/3103023
+ []
+
+[64] [65] [66] [67]
+Chapter 3.
+[68
+
+] [69] [70] [71]
+File: ../osisn_processes/figures/figure1.png Graphic file (type bmp)
+<../osisn_processes/figures/figure1.png>
+[72]
+Underfull \vbox (badness 4608) has occurred while \output is active []
+
+[73]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[74] [75] [76]
 File: ../osisn_processes/figures/figure2.png Graphic file (type bmp)
 <../osisn_processes/figures/figure2.png>
-[9] [10] [11
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[77] [78]
+Underfull \vbox (badness 4608) has occurred while \output is active []
+
+[79] [80]
+Underfull \vbox (badness 4608) has occurred while \output is active []
+
+
+Overfull \hbox (12.27008pt too wide) has occurred while \output is active
+\TU/lmr/m/sl/12 3. ORGANIC SEED INNOVATION SYSTEM: FORMAL AND INFORMAL NETWORKS
+ 
+ []
+
+[81] [82] [83]
+Overfull \hbox (448.5646pt too wide) in paragraph at lines 3057--3066
+ [][] 
+ []
+
+[84] [85]
+Underfull \hbox (badness 10000) in paragraph at lines 3137--3137
+[][][]\TU/lmr/m/n/10 Note that this parameter is often misinterpreted in studie
+s that use ERGMs
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3137--3137
+\TU/lmr/m/n/10 and we encourage readers with further interest to explore more i
+n the fol-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3137--3137
+\TU/lmr/m/n/10 lowing resources: [][][https://figshare.com/articles/poster/Inte
+rpretation_of_GW-
+ []
+
+[86] [87] [88]
+File: ../osisn_processes/figures/figure3.png Graphic file (type bmp)
+<../osisn_processes/figures/figure3.png>
+
+Underfull \vbox (badness 4608) has occurred while \output is active []
+
+[89] [90]
+
+LaTeX Warning: Command \' invalid in math mode on input line 3262.
+
+Missing character: There is no ś in font cmmi12!
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[91]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[92] [93]
+File: ../osisn_processes/figures/figure4.jpeg Graphic file (type bmp)
+<../osisn_processes/figures/figure4.jpeg>
+[94] [95]
+File: ../osisn_processes/figures/figure5.png Graphic file (type bmp)
+<../osisn_processes/figures/figure5.png>
+[96] [97] [98] [99] [100] [101] [102] [103
 
 ]
 Appendix A.
 
-LaTeX Warning: Reference `ref-labels' on page 12 undefined on input line 366.
+LaTeX Warning: Reference `ref-labels' on page 104 undefined on input line 3620.
 
-[12
+
+[104
 
 ]
 Appendix B.
-[13
+[105
 
 ]
-Overfull \hbox (30.352pt too wide) in paragraph at lines 479--479
+Overfull \hbox (30.352pt too wide) in paragraph at lines 3728--3728
 []\TU/lmtt/m/n/12 - Session info ----------------------------------------------
 -----------------[] 
  []
 
-[14
+[106
 
 ]
-Overfull \hbox (166.31244pt too wide) in paragraph at lines 479--479
+Overfull \hbox (166.31244pt too wide) in paragraph at lines 3728--3728
 [] \TU/lmtt/m/n/12 pandoc   3.1.1 @ /Applications/RStudio.app/Contents/Resource
 s/app/quarto/bin/tools/ (via rmarkdown)[] 
  []
 
 
-Overfull \hbox (30.35199pt too wide) in paragraph at lines 479--479
+Overfull \hbox (30.35199pt too wide) in paragraph at lines 3728--3728
 []\TU/lmtt/m/n/12 - Packages --------------------------------------------------
 -----------------[] 
  []
 
 
-Overfull \hbox (17.9564pt too wide) in paragraph at lines 479--479
-[] \TU/lmtt/m/n/12 aggiedown        1.0     2023-08-16 [1] Github (ryanpeek/agg
-iedown@ae99300)[] 
- []
-
-
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[15]
+[107]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[16]
+[108]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[17]
-Overfull \hbox (5.6085pt too wide) in paragraph at lines 479--479
+[109]
+Overfull \hbox (5.6085pt too wide) in paragraph at lines 3728--3728
 [] \TU/lmtt/m/n/12 [1] /Library/Frameworks/R.framework/Versions/4.3-x86_64/Reso
 urces/library[] 
  []
 
 
-Overfull \hbox (30.35193pt too wide) in paragraph at lines 479--479
+Overfull \hbox (30.35193pt too wide) in paragraph at lines 3728--3728
 []\TU/lmtt/m/n/12 -------------------------------------------------------------
 -----------------[] 
  []
 
-[18]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 487.
-[19
+[110]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 3736.
+[111
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 487.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 3736.
 (./thesis.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 487.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 487.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 3736.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 3736.
+
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: B61339ED155F84D05975582A14C16CCD;1689.
+(rerunfilecheck)             Checksum: A36D099C40B66F37F8D8921B3D73B6E1;2175.
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 18855 strings out of 479418
- 328472 string characters out of 5884586
- 631558 words of memory out of 5000000
- 36092 multiletter control sequences out of 15000+600000
- 539895 words of font info for 69 fonts, out of 8000000 for 9000
+ 19026 strings out of 479418
+ 334611 string characters out of 5884586
+ 649211 words of memory out of 5000000
+ 36249 multiletter control sequences out of 15000+600000
+ 542268 words of font info for 82 fonts, out of 8000000 for 9000
  1349 hyphenation exceptions out of 8191
- 44i,7n,50p,771b,678s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 44i,10n,50p,771b,882s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on thesis.pdf (28 pages).
+Output written on thesis.pdf (121 pages).

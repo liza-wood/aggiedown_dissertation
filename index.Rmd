@@ -23,9 +23,9 @@ output:
 bibliography: bib/thesis.bib
 csl: csl/ecology.csl
 link-citations: yes
-linkcolor: purple
-urlcolor: blue
-citecolor: green
+linkcolor: "#31688EF"
+urlcolor: "#482878FF"
+citecolor: "#6DCD59F"
 lot: true
 lof: true
 ---
