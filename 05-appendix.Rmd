@@ -2,23 +2,8 @@
 
 `r if(!knitr:::is_latex_output()) '# (APPENDIX) Appendix {-}'` 
 
-<!--
-If you feel it necessary to include an appendix, it goes here.
--->
-
-
-# The First Appendix
-
-This first appendix includes all of the R chunks of code that were hidden throughout the document (using the `include = FALSE` chunk tag) to help with readibility and/or setup.
-
-**In the main Rmd file**
-
-```{r ref.label='include_packages', results='hide', echo = TRUE}
+```{r, child = '~/Documents/Davis/R-Projects/organicseed_adoption/ch1-manuscript/04_appendix.Rmd'}
 ```
 
-**In Chapter \@ref(ref-labels):**
-
-```{r ref.label='include_packages_2', results='hide', echo = TRUE}
+```{r, child = '~/Documents/Davis/R-Projects/osisn_processes/ch3-manuscript/04_appendix.Rmd'}
 ```
-
-# The Second Appendix, for Fun

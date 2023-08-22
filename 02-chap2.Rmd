@@ -1,4 +1,3 @@
-
-```{r test-main, child = '~/Documents/Davis/R-Projects/osisn_spatial/ch2-manuscript/03_manuscript.Rmd'}
+```{r, child = '~/Documents/Davis/R-Projects/osisn_spatial/ch2-manuscript/03_manuscript.Rmd'}
 ```
 
