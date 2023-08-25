@@ -21,7 +21,7 @@ output:
   aggiedown::thesis_pdf: 
     latex_engine: xelatex
 bibliography: bib/thesis.bib
-csl: csl/ecology.csl
+csl: csl/apsa.csl
 link-citations: yes
 linkcolor: "#31688EF"
 urlcolor: "#482878FF"
