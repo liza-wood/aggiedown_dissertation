@@ -3,11 +3,11 @@
 `r if(!knitr:::is_latex_output()) '# (APPENDIX) Appendix {-}'` 
 
 
-```{r, child = '~/Documents/Davis/R-Projects/organicseed_adoption/ch1-manuscript/04_appendix.Rmd'}
+```{r, child = '~/Documents/Davis/R-Projects/organicseed_adoption/ch1-manuscript/03_appendix_manual.Rmd'}
 ```
 
-```{r, child = '~/Documents/Davis/R-Projects/osisn_spatial/ch2-manuscript/04_appendix.Rmd'}
+```{r, child = '~/Documents/Davis/R-Projects/osisn_spatial/ch2-manuscript/03_appendix_manual.Rmd'}
 ```
 
-```{r, child = '~/Documents/Davis/R-Projects/osisn_processes/ch3-manuscript/04_appendix.Rmd'}
+```{r, child = '~/Documents/Davis/R-Projects/osisn_processes/ch3-manuscript/03_appendix_manual.Rmd'}
 ```

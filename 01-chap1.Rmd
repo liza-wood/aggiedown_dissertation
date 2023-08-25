@@ -1,3 +1,3 @@
-```{r, child = '~/Documents/Davis/R-Projects/organicseed_adoption/ch1-manuscript/03_manuscript.Rmd'}
+```{r, child = '~/Documents/Davis/R-Projects/organicseed_adoption/ch1-manuscript/02_manuscript.Rmd'}
 ```
 
