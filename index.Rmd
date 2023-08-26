@@ -23,9 +23,9 @@ output:
 bibliography: bib/thesis.bib
 csl: csl/apsa.csl
 link-citations: yes
-linkcolor: "#31688EF"
-urlcolor: "#482878FF"
-citecolor: "#6DCD59F"
+linkcolor: "#359EAAF"
+urlcolor: "#359EAAF"
+citecolor: "#3B5698FF"
 lot: true
 lof: true
 ---

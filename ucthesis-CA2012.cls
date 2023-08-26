@@ -360,9 +360,9 @@
 }
 
 % DEDICATION
-\newenvironment{dedication}{
-  \if@openright\cleardoublepage \else\clearpage \fi
-}{}
+%\newenvironment{dedication}{
+%  \if@openright\cleardoublepage \else\clearpage \fi
+%}{}
 
 % ACKNOWLEDGEMENTS
 \newenvironment{acknowledgements}{
@@ -754,32 +754,32 @@
 % LIST OF FIGURES
 %
 % Single-space list of figures, add it to the table of contents.
-\def\listoffigures{\@restonecolfalse
-  \if@twocolumn\@restonecoltrue\onecolumn\fi
-  \chapter*{\listfigurename\@mkboth{\uppercase{\listfigurename}}%
-  {\uppercase{\listfigurename}}}
-   \addcontentsline{toc}{chapter}{\listfigurename}
-   {\ssp\@starttoc{lof}}\if@restonecol
-    \twocolumn\fi}
-
-\def\l@figure{\@dottedtocline{1}{1.5em}{2.3em}}
+%\def\listoffigures{\@restonecolfalse
+%  \if@twocolumn\@restonecoltrue\onecolumn\fi
+%  \chapter*{\listfigurename\@mkboth{\uppercase{\listfigurename}}%
+%  {\uppercase{\listfigurename}}}
+%   \addcontentsline{toc}{chapter}{\listfigurename}
+%   {\ssp\@starttoc{lof}}\if@restonecol
+%    \twocolumn\fi}
+%
+%\def\l@figure{\@dottedtocline{1}{1.5em}{2.3em}}
 
 % LIST OF TABLES
 %
-\def\listoftables{\@restonecolfalse
-  \if@twocolumn\@restonecoltrue\onecolumn\fi
-  \chapter*{\listtablename\@mkboth{\uppercase{\listtablename}}%
-   {\uppercase{\listtablename}}}\@starttoc{lot}\if@restonecol
-  \twocolumn\fi}
-\def\listoftables{\@restonecolfalse
-  \if@twocolumn\@restonecoltrue\onecolumn\fi
-  \chapter*{\listtablename\@mkboth{\uppercase{\listtablename}}%
-{\uppercase{\listtablename}}}
-   \addcontentsline{toc}{chapter}{\listtablename}
-   {\ssp\@starttoc{lot}}\if@restonecol
-  \twocolumn\fi}
-
-\let\l@table\l@figure
+%\def\listoftables{\@restonecolfalse
+%  \if@twocolumn\@restonecoltrue\onecolumn\fi
+%  \chapter*{\listtablename\@mkboth{\uppercase{\listtablename}}%
+%   {\uppercase{\listtablename}}}\@starttoc{lot}\if@restonecol
+%  \twocolumn\fi}
+%\def\listoftables{\@restonecolfalse
+%  \if@twocolumn\@restonecoltrue\onecolumn\fi
+%  \chapter*{\listtablename\@mkboth{\uppercase{\listtablename}}%
+%{\uppercase{\listtablename}}}
+%   \addcontentsline{toc}{chapter}{\listtablename}
+%   {\ssp\@starttoc{lot}}\if@restonecol
+%  \twocolumn\fi}
+%
+%\let\l@table\l@figure
 
 
 %    ****************************************
