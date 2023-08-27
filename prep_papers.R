@@ -56,7 +56,6 @@ prep_papers <- function(GDOC_URL, GDOC_PATH){
     }
 
     # Correct et al
-    etal_bibkeys <- str_which(bt$BIBTEXKEY, 'et(_|\\s|)al\\.\\\\')
     ## I don;t know that I need to do what I did above, right?
     refs <- str_replace_all(refs, 'et(_?\\s?)al\\.\\\\', 'et_al\\.')
     
@@ -73,25 +72,79 @@ prep_papers <- function(GDOC_URL, GDOC_PATH){
     txt <- paste(str_remove(str_sub(txt, 1, ref_start[1]), "#?#$"), 
                  str_sub(txt, ref_end[1], nchar(txt)))
     
-    # Correct where linebreaks were
-    break_loc <- data.frame(str_locate_all(txt, '\\[\\w+(\\s|\\n)\\w+_\\d{4}\\]'))
-    # Then replace them in the text
-    if(nrow(break_loc) > 0){
-      for(i in 1:nrow(break_loc)){
-        str_sub(txt, break_loc[i,1], break_loc[i,2]) <- str_replace_all(str_sub(txt, break_loc[i,1], break_loc[i,2]), 
-                                                                        '\\\n|\\s', '_')
+    # Correct where linebreaks were in text
+    inlinecit <- '\\[(\\w|\\d|_|\\s|\\n)+_\\d{4}\\]'
+    cit_loc <- data.frame(str_locate_all(txt, inlinecit))
+    str_sub(txt, cit_loc[107,1], cit_loc[107,2])
+    str_sub(txt, cit_loc[35,1], cit_loc[35,2])
+    str_sub(txt, cit_loc[60,1], cit_loc[60,2])
+    str_sub(txt, cit_loc[67,1], cit_loc[67,2])
+    str_sub(txt, cit_loc[1,1], cit_loc[1,2])
+    if(nrow(cit_loc) > 0){
+      for(i in 1:nrow(cit_loc)){
+        str_sub(txt, cit_loc[i,1], cit_loc[i,2]) <- str_replace_all(str_sub(txt, cit_loc[i,1], cit_loc[i,2]), '\\n|\\s', '_')
+      }
     }
+    # Check work
+    if(nrow(cit_loc) > 0){
+      for(i in 1:nrow(cit_loc)){
+    results <- str_detect(str_sub(txt, cit_loc[i,1], cit_loc[i,2]), '\\n|\\s')
+    if(results == T){
+      print(paste('found a space in', i))
+    } else {
+      print('Looks good -- no spaces in inline cites')
+    }
+      }
     }
     
-    # Then remove where the zotero link it
-    txt <- str_remove_all(txt, '\\(https\\://www\\.zotero\\.org/google\\-docs/\\?.{6}\\)')
+    # Correct where et al were in text
+    etal_loc <- data.frame(str_locate_all(txt, 'et(_|\\s)al\\.\\\\'))
+    str_sub(txt, etal_loc[1,1]-5, etal_loc[1,2]+5)
+    ## I don;t know that I need to do what I did above, right?
+    txt <- str_replace_all(txt, 'et(_?\\s?)al\\.\\\\', 'et_al\\.')
+
+    
+    # Then remove where the zotero link i
+    links <- str_extract_all(txt, '\\(https\\://www\\.zotero\\.org/google\\-docs/\\?(.{6}|broken\\=laytXQ)\\)')
+    txt <- str_remove_all(txt, '\\(https\\://www\\.zotero\\.org/google\\-docs/\\?(.{6}|broken\\=laytXQ)\\)')
     
     # identify inline based on key (everything should be matched) and assign @
+    # if i arrange longest to shortest char, will that overcome my challenges of some getting misassigned (e.g. Hieberg_Binz_Truffer_2020 getting Binz_Truffer_2020)
+    bt$nchar <- nchar(bt$BIBTEXKEY)
+    bt <- bt %>% dplyr::select(BIBTEXKEY, nchar) %>% dplyr::arrange(desc(nchar))
+    # Still bugs. So what about finding the absolute locations of each key
     for(i in 1:length(bt$BIBTEXKEY)){
-      txt <- str_replace_all(txt, bt$BIBTEXKEY[i], paste0('@', bt$BIBTEXKEY[i]))
+      str_locate_all(txt, bt$BIBTEXKEY[i])
+      df_locs <- data.frame(str_locate_all(txt, paste0('(?<=\\d_)', 
+                                                        bt$BIBTEXKEY[i],
+                                       '|(?<=\\[)', bt$BIBTEXKEY[i])))
+      if(nrow(df_locs) == 0){
+        next
+      } else {
+        df_locs <- df_locs[,1:2]
+        if(nrow(df_locs) == 1){
+          str_sub(txt, df_locs$start, df_locs$end) <- paste0('@',str_sub(txt, df_locs$start, df_locs$end))
+          # it does a weird repeating thing because the strong counts get messed up and it doesn't seem to vectorize well, so if longer then just one instances i re-run it every time
+        } else {
+          for(j in 1:nrow(df_locs)){
+            one_loc <- data.frame(str_locate_all(txt, paste0('(?<=\\d_@?)', 
+                                                             bt$BIBTEXKEY[i],
+                                                             '|(?<=\\[@?)',
+                                                             bt$BIBTEXKEY[i])))
+            one_loc <- one_loc[j,1:2]
+            str_sub(txt, one_loc$start, one_loc$end) <- paste0('@',str_sub(txt, one_loc$start, one_loc$end))
+          }
+        }
+      }
     }
+   
     # if multiple references then replace _ with ;
     txt <- str_replace_all(txt, '_@', '; @')
+    
+    inlinecit <- '\\[@(\\w|\\d|_|@)+\\d{4}\\]'
+    cit_loc <- data.frame(str_locate_all(txt, inlinecit))
+    str_sub(txt, cit_loc[78,1], cit_loc[78,2])
+    str_sub(txt, cit_loc[53,1], cit_loc[53,2])
     
   } else {
     # If not bibtext, Save as text to be read by the parser
@@ -211,4 +264,5 @@ manual_bib_file <- function(){
 }
 
 manual_bib_file()
+auto_bib_file()
 test <- bib2df::bib2df('bib/thesis.bib')

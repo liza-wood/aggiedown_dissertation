@@ -1,0 +1,96 @@
+\contentsline {chapter}{Abstract}{iv}{Doc-Start}%
+\contentsline {chapter}{Introduction}{1}{chapter*.2}%
+\contentsline {chapter}{\numberline {1}The double-edged sword of flexible environmental policy: The case of the seed loophole in certified organic production}{2}{chapter.1}%
+\contentsline {section}{1. Introduction}{2}{section*.3}%
+\contentsline {section}{2. Background}{4}{section*.4}%
+\contentsline {subsection}{2.1 Environmental policy flexibility}{4}{subsection*.5}%
+\contentsline {subsection}{2.2 Organic agricultural standards}{6}{subsection*.6}%
+\contentsline {subsubsection}{2.2.1 Flexibility of organic certification}{6}{subsubsection*.7}%
+\contentsline {subsubsection}{2.2.2 Different models of organic farming}{7}{subsubsection*.8}%
+\contentsline {section}{3. Hypotheses}{9}{section*.9}%
+\contentsline {section}{4. Methods}{10}{section*.10}%
+\contentsline {subsection}{4.1 Case: USDA National Organic Program and organic seed}{10}{subsection*.11}%
+\contentsline {subsection}{4.2 Data: Organic grower survey}{12}{subsection*.12}%
+\contentsline {subsection}{4.3 Quantitative analysis}{12}{subsection*.13}%
+\contentsline {subsubsection}{4.3.1 Variables}{12}{subsubsection*.14}%
+\contentsline {subsubsection}{4.3.2 Modeling approach}{15}{subsubsection*.15}%
+\contentsline {subsection}{4.4 Descriptive analysis??}{16}{subsection*.16}%
+\contentsline {section}{5. Results}{16}{section*.17}%
+\contentsline {subsection}{5.1 State of organic seed}{16}{subsection*.18}%
+\contentsline {subsection}{}{18}{subsection*.19}%
+\contentsline {subsection}{5.2 Policy flexibility for those facing barriers}{18}{subsection*.20}%
+\contentsline {subsection}{5.3 \textquotesingle Practical\textquotesingle {} farmer profiles rely more on policy flexibility}{19}{subsection*.21}%
+\contentsline {subsection}{5.4 Descriptive??}{21}{subsection*.22}%
+\contentsline {section}{6. Discussion and conclusion}{21}{section*.23}%
+\contentsline {subsection}{6.1 Flexibility in the organic standard is double-edged}{21}{subsection*.24}%
+\contentsline {subsection}{6.2 Reckoning with identities of environmental movements}{24}{subsection*.25}%
+\contentsline {subsection}{6.3 Organic policy recommendations}{26}{subsection*.26}%
+\contentsline {chapter}{\numberline {2}Mapping the spatial boundaries of the United State\textquotesingle s organic seed niche: An empirical test of the Global Innovation System framework}{28}{chapter.2}%
+\contentsline {section}{1. Introduction}{28}{section*.27}%
+\contentsline {section}{2. Background}{31}{section*.28}%
+\contentsline {subsection}{2.1 The spatial turn of innovation systems}{31}{subsection*.29}%
+\contentsline {subsection}{2.2 Components of an innovation system network}{32}{subsection*.30}%
+\contentsline {subsection}{2.3 Typology of subsystem spatial configurations}{34}{subsection*.31}%
+\contentsline {subsection}{2.4 Organic seed innovation system}{38}{subsection*.32}%
+\contentsline {subsection}{2.5 Hypotheses}{40}{subsection*.33}%
+\contentsline {section}{3. Methods}{41}{section*.34}%
+\contentsline {subsection}{3.1 Organic seed system surveys}{41}{subsection*.35}%
+\contentsline {subsubsection}{3.1.1 Innovation system stakeholder identification}{41}{subsubsection*.36}%
+\contentsline {subsubsection}{3.1.2 Survey development, distribution and sample}{43}{subsubsection*.37}%
+\contentsline {subsection}{3.2 Network construction}{44}{subsection*.38}%
+\contentsline {subsection}{3.3 Social network analyses}{46}{subsection*.39}%
+\contentsline {subsubsection}{3.3.1 Geographic and scale composition across n-clans}{46}{subsubsection*.40}%
+\contentsline {subsubsection}{3.3.2 ERGMs}{48}{subsubsection*.41}%
+\contentsline {section}{4. Results}{50}{section*.42}%
+\contentsline {subsection}{4.1 Innovation subsystem and n-clan spatial composition}{50}{subsection*.43}%
+\contentsline {subsection}{4.2 ERGM}{50}{subsection*.44}%
+\contentsline {subsubsection}{4.2.1 Organic seed as a spatially sticky regional innovation system}{51}{subsubsection*.45}%
+\contentsline {subsubsection}{4.2.2 Vertical coupling via national-scale bridges}{52}{subsubsection*.46}%
+\contentsline {subsubsection}{4.2.3 Horizontal coupling via subsystem spillover}{54}{subsubsection*.47}%
+\contentsline {section}{5. Discussion}{55}{section*.48}%
+\contentsline {subsection}{5.1 Developing GIS theory}{55}{subsection*.49}%
+\contentsline {subsection}{5.2 Contributions to IS network methods}{57}{subsection*.50}%
+\contentsline {subsection}{5.3 Limitations}{58}{subsection*.51}%
+\contentsline {section}{6. Conclusion}{58}{section*.52}%
+\contentsline {chapter}{\numberline {3}Innovation system network formation: Resource constellations shape cooperation in the organic seed niche}{60}{chapter.3}%
+\contentsline {section}{1. Introduction}{60}{section*.53}%
+\contentsline {section}{2. Background}{63}{section*.54}%
+\contentsline {subsection}{2.1 The structural building blocks of networks}{63}{subsection*.55}%
+\contentsline {subsubsection}{2.1.1 Modes of innovation system building}{63}{subsubsection*.56}%
+\contentsline {subsubsection}{2.1.2 Social network motifs}{66}{subsubsection*.57}%
+\contentsline {subsection}{2.2 Attributes shaping innovation system network structure}{68}{subsection*.58}%
+\contentsline {subsubsection}{2.2.1 Resource-based conditions across subsystems}{68}{subsubsection*.59}%
+\contentsline {subsubsection}{2.2.2 Actor composition based on institutional logic}{71}{subsubsection*.60}%
+\contentsline {subsection}{2.3. Case: Organic seed innovation system}{73}{subsection*.61}%
+\contentsline {section}{3. Methods}{75}{section*.62}%
+\contentsline {subsection}{3.1 Data collection}{75}{subsection*.63}%
+\contentsline {subsection}{3.2 Challenges and expertise as system resources}{76}{subsection*.64}%
+\contentsline {subsection}{3.3 Network construction}{77}{subsection*.65}%
+\contentsline {subsection}{3.4 Analytical approach: ERGMs}{79}{subsection*.66}%
+\contentsline {section}{4. Results}{81}{section*.67}%
+\contentsline {subsection}{4.1 Organic seed system resource deficits}{81}{subsection*.68}%
+\contentsline {subsection}{4.2 Network descriptives}{85}{subsection*.69}%
+\contentsline {subsection}{4.3 Network inferences with ERGMs}{87}{subsection*.70}%
+\contentsline {subsubsection}{4.3.1 Resource subsystem structure}{88}{subsubsection*.71}%
+\contentsline {subsubsection}{4.3.2 Resource subsystem composition}{90}{subsubsection*.72}%
+\contentsline {section}{5. Discussion}{91}{section*.73}%
+\contentsline {subsection}{5.1 Conditions for innovation system formation}{91}{subsection*.74}%
+\contentsline {subsection}{5.2 Actor composition aligns with logic in the niche phase}{92}{subsection*.75}%
+\contentsline {subsection}{5.3 Limitations}{94}{subsection*.76}%
+\contentsline {section}{6. Conclusion}{95}{section*.77}%
+\contentsline {chapter}{Conclusion}{97}{chapter*.78}%
+\contentsline {chapter}{\numberline {A}Appendix A}{98}{appendix.A}%
+\contentsline {section}{1. Model selection and fit}{98}{section*.79}%
+\contentsline {section}{2. Full model results}{98}{section*.80}%
+\contentsline {section}{3. Predicted conventional seed use for field and forage crop growers}{98}{section*.81}%
+\contentsline {chapter}{\numberline {B}Appendix B}{102}{appendix.B}%
+\contentsline {section}{1. Selecting spatial terms}{102}{section*.82}%
+\contentsline {section}{2. Defining actors' spatial scales}{103}{section*.83}%
+\contentsline {section}{3. Full model results.}{103}{section*.84}%
+\contentsline {chapter}{\numberline {C}Appendix C}{108}{appendix.C}%
+\contentsline {section}{1. Sample representativeness across US regions and spatial scales}{109}{section*.85}%
+\contentsline {section}{2. Full list of resource-related topics}{109}{section*.86}%
+\contentsline {section}{3. Model building and selection}{110}{section*.87}%
+\contentsline {section}{4. Full model results}{112}{section*.88}%
+\contentsline {chapter}{Colophon}{115}{appendix*.89}%
+\contentsline {chapter}{References}{116}{appendix*.90}%

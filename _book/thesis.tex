@@ -6,6 +6,32 @@
   \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
 
 % From {rticles}
+\newlength{\csllabelwidth}
+\setlength{\csllabelwidth}{3em}
+\newlength{\cslhangindent}
+\setlength{\cslhangindent}{1.5em}
+% for Pandoc 2.8 to 2.10.1
+\newenvironment{cslreferences}%
+  {}%
+  {\par}
+% For Pandoc 2.11+
+% As noted by @mirh [2] is needed instead of [3] for 2.12
+\newenvironment{CSLReferences}[2] % #1 hanging-ident, #2 entry spacing
+ {% don't indent paragraphs
+  \setlength{\parindent}{0pt}
+  % turn on hanging indent if param 1 is 1
+  \ifodd #1 \everypar{\setlength{\hangindent}{\cslhangindent}}\ignorespaces\fi
+  % set entry spacing
+  \ifnum #2 > 0
+  \setlength{\parskip}{#2\baselineskip}
+  \fi
+ }%
+ {}
+\usepackage{calc} % for calculating minipage widths
+\newcommand{\CSLBlock}[1]{#1\hfill\break}
+\newcommand{\CSLLeftMargin}[1]{\parbox[t]{\csllabelwidth}{#1}}
+\newcommand{\CSLRightInline}[1]{\parbox[t]{\linewidth - \csllabelwidth}{#1}}
+\newcommand{\CSLIndent}[1]{\hspace{\cslhangindent}#1}
 
 %--- Packages ---------------------------------------------------------
 \usepackage[lofdepth,lotdepth,caption=false]{subfig}
@@ -95,11 +121,11 @@
               unicode=false, % unicode breaks when used with xetex
               xetex,
               colorlinks=true,
-              linkcolor=blue]{hyperref}
+              allcolors=teal]{hyperref}
 \else
   \usepackage[unicode=true,
               colorlinks=true,
-              linkcolor=blue]{hyperref}
+              allcolors=teal]{hyperref}
 \fi
 \hypersetup{breaklinks=true, pdfborder={0 0 0}}
 \setlength{\parindent}{0pt}
@@ -200,9 +226,7 @@
   % TABLE OF CONTENTS
 	\tableofcontents
 
-%	%  \listoftables
-%  %
-%  %  \listoffigures
+%	%
 %  
 \end{ucfrontmatter}
 \begin{ucmainmatter}
@@ -312,8 +336,8 @@ innovation to ultimately improve environmental outcomes (Loonie et al.
 2011; Yuan and Zhang 2020). The drawback of flexible policy tools,
 however, is that participation can be low, adherence needs to be
 monitored to avoid free-riding (Prakash and Poroski 2007), and there is
-less certainty around the environmental benefits (Stuart, Benveniste,
-and Harris 2014).
+less certainty around the environmental benefits
+(\protect\hyperlink{ref-Stuart_Benveniste_Harris_2014}{Stuart, Benveniste, and Harris 2014}).
 Furthermore, vague criteria for exceptions/derogations like the use of
 \textquotesingle best available technology\textquotesingle{} gives wide latitude to firms\textquotesingle{} discretion
 (Romero-Castro et al.~2022).
@@ -395,8 +419,8 @@ the organic seed market develops (Hubbard 2011, 2016). While there is
 evidence that the seed system is growing through increased public
 research spending and the development of new organic varieties (Hubbard
 et al.~2021; Liveseed?), there is still widespread uncertainty as to how
-the seed loophole is used by organic growers (Hubbard, Zystro, and Wood
-2022).
+the seed loophole is used by organic growers
+(\protect\hyperlink{ref-Hubbard_Zystro_Wood_2022}{Hubbard, Zystro, and Wood 2022}).
 
 \hypertarget{different-models-of-organic-farming}{%
 \subsubsection{2.2.2 Different models of organic farming}\label{different-models-of-organic-farming}}
@@ -422,28 +446,27 @@ are not mutually exclusive (Thompson et al.~2015, dolaglu?).
 Additionally, operational attributes such as farm size can influence the
 willingness and ability to innovate. In some cases large operations may
 be the ones that have the resources to take on risk and experiment with
-new practices ((Feder and Umali
-1993), \href{https://www.zotero.org/google-docs/?broken=rs6XVC}{Dunn et al.,
-2016}), but in other
-cases it may hinder the willingness to try something new at a large
-scale, especially if there is no visible economic return (Napier 2000,
-(Buttel, Jr, and Larson
-1990)).
+new practices
+((\protect\hyperlink{ref-Feder_Umali_1993}{Feder and Umali 1993}),
+(\protect\hyperlink{ref-Daloux11flu_Nassauer_Riolo_Scavia_2014}{Daloğlu et al. 2014})),
+but in other cases it may hinder the willingness to try something new at
+a large scale, especially if there is no visible economic return (Napier
+2000,
+(\protect\hyperlink{ref-Buttel_Jr_Larson_1990}{Buttel, Jr, and Larson 1990})).
 
 Variation in grower motivations is especially prominent in organic
 agriculture. Organic farming originated as a grassroots movement,
 centered around holistic environmental and social farming principles
-(Youngberg \& DeMuth,
-2013)(\url{https://www.zotero.org/google-docs/?broken=hg5nRL}). This vision
-of sustainability emphasizes soil health, biodiversity, social justice,
-and community food systems as a contrast to the industrialized model of
-conventional farms (ibid, Coleman). But when codified into practice as
-certified organic standards, there was quickly a trend towards
-\textquotesingle conventionalization\textquotesingle{} of organic. In this conventionalization, growers
-participate in organic practices (as defined by the standard) but not
-organic principles (as defined by the movement\textquotesingle s broader
-social-environmental ethos), mainly to gain the price premium (Darnhofer
-et al.~2010, Guthman).
+(\protect\hyperlink{ref-Youngberg_DeMuth_2013}{Youngberg and DeMuth 2013}).
+This vision of sustainability emphasizes soil health, biodiversity,
+social justice, and community food systems as a contrast to the
+industrialized model of conventional farms (ibid, Coleman). But when
+codified into practice as certified organic standards, there was quickly
+a trend towards \textquotesingle conventionalization\textquotesingle{} of organic. In this
+conventionalization, growers participate in organic practices (as
+defined by the standard) but not organic principles (as defined by the
+movement\textquotesingle s broader social-environmental ethos), mainly to gain the
+price premium (Darnhofer et al.~2010, Guthman).
 
 The division between \textquotesingle principled\textquotesingle{} and \textquotesingle practical\textquotesingle{} organic farmers
 has created tension around the identity of organic farming (von Shlen
@@ -529,12 +552,11 @@ contributes to environmental outcomes by having more acreage managed
 under organic practices. The principle of organic seed, however, extends
 even further. Organic seeds ought to support genetic and crop diversity
 maintenance, be adapted to organic growing conditions, and suitable for
-regional environments (Hubbard et al., 2022; Rohe et al.,
-2022)(\url{https://www.zotero.org/google-docs/?broken=pvMEt9}). Furthermore,
-organic breeding is often collaborative, where seed sovereignty and
-social needs are included as project considerations (Colley, 2022;
-Dawson et al.,
-2011)(\url{https://www.zotero.org/google-docs/?broken=6ndb0v}). Altogether,
+regional environments
+(\protect\hyperlink{ref-Hubbard_Zystro_Wood_2022}{Hubbard, Zystro, and Wood 2022}; \protect\hyperlink{ref-Rohe_Oltmer_Wolter_Gmeiner_Tschersich_2022}{Rohe et al. 2022}).
+Furthermore, organic breeding is often collaborative, where seed
+sovereignty and social needs are included as project considerations
+(\protect\hyperlink{ref-Colley_2022}{Colley 2022}; \protect\hyperlink{ref-Dawson_Riviuxe8re_Berthellot_Mercier_Kochko_Galic_Pin_Serpolay_Thomas_Giuliano_et_al._2011}{Dawson et al. 2011}). Altogether,
 organic seed is a foundational part of organic production, especially
 for more principled organic growers (Hubbard et al.~2022).
 
@@ -700,12 +722,11 @@ that organic seed is important to the success of organic production was
 4 (somewhat important), which increased to 4.3 in 2015 and 2020. The
 operational profile of organic growers matches the profile of
 agricultural production more generally in that farm sizes are increasing
-((Sumner 2014)). The
-average farm size over the three survey periods was 180, 275, and 346
-acres. This increase is most pronounced in field and forage crops.
-Further, the number of crop categories planted by growers has been
-declining, with an average of 1.7 crop types in 2010 down to an average
-of 1.3 in 2020.
+((\protect\hyperlink{ref-Sumner_2014}{Sumner 2014})). The average
+farm size over the three survey periods was 180, 275, and 346 acres.
+This increase is most pronounced in field and forage crops. Further, the
+number of crop categories planted by growers has been declining, with an
+average of 1.7 crop types in 2010 down to an average of 1.3 in 2020.
 
 The relationship between certifiers and organic growers has shifted over
 the years, as it appears that organic certifiers are becoming less
@@ -934,8 +955,8 @@ This is also an innovation system/innovation policy problem
   \textgreater{} innovation by requiring its use, it simultaneously creates
   \textgreater{} challenges for incentivizing entrepreneurial activity due to this
   \textgreater{} exception, and leaves the decision to certifiers for assessing
-  \textgreater{} commercial availability and viable alternatives (Renaud et al.,
-  \textgreater{} 2016)(\url{https://www.zotero.org/google-docs/?broken=bElDy3}).
+  \textgreater{} commercial availability and viable alternatives
+  \textgreater{} (\protect\hyperlink{ref-Renaud_Bueren_Jiggins_2016}{Renaud, Bueren, and Jiggins 2016}).
 \end{itemize}
 \hypertarget{reckoning-with-identities-of-environmental-movements}{%
 \subsection{6.2 Reckoning with identities of environmental movements}\label{reckoning-with-identities-of-environmental-movements}}
@@ -1079,28 +1100,28 @@ preferencing a select farmer profile.
 
 Innovation systems (IS) are a complex network of actors and institutions
 that interact in support of developing and diffusing new technological
-and/or social innovation (Bergek et al.
-2008). The field of IS has
-broadly led to insights that support policy recommendations for
-fostering innovation for sustainable development, particularly from
-\textquotesingle niche\textquotesingle{} phases.
+and/or social innovation
+(\protect\hyperlink{ref-Bergek_Jacobsson_Carlsson_Lindmark_Rickne_2008}{Bergek et al. 2008}).
+The field of IS has broadly led to insights that support policy
+recommendations for fostering innovation for sustainable development,
+particularly from \textquotesingle niche\textquotesingle{} phases.
 
 Yet, studies on innovation have long been grappling with the challenge
-of defining meaningful boundaries around these innovation systems (Binz
-et al.~2020; Coenen, Benneworth, and Truffer
-2012). System boundaries
-affect how we understand an innovation\textquotesingle s development and success
-(Wieczorek et al.~2015),
+of defining meaningful boundaries around these innovation systems
+(\protect\hyperlink{ref-Binz_Coenen_Murphy_Truffer_2020}{Binz et al. 2020}; \protect\hyperlink{ref-Coenen_Benneworth_Truffer_2012}{Coenen, Benneworth, and Truffer 2012}).
+System boundaries affect how we understand an innovation\textquotesingle s development
+and success
+(\protect\hyperlink{ref-Wieczorek_Hekkert_Coenen_Harmsen_2015}{Anna J. Wieczorek et al. 2015}),
 and therefore identifying meaningful boundaries is a first step towards
-a generalizable understanding of how and why systems evolve (Binz,
-Truffer, and Coenen 2014).
+a generalizable understanding of how and why systems evolve
+(\protect\hyperlink{ref-Binz_Truffer_Coenen_2014}{Binz, Truffer, and Coenen 2014}).
 
 Given the importance of boundary-setting, this paper asks: \emph{What
 determines the spatial boundaries of an innovation system?} We answer
 this question by drawing on the \textquotesingle Global Innovation Systems\textquotesingle{} (GIS)
-framework (Binz and Truffer
-2017), which proposes
-predictors of IS spatial scales and sets out an approach for
+framework
+(\protect\hyperlink{ref-Binz_Truffer_2017}{Binz and Truffer 2017}), which
+proposes predictors of IS spatial scales and sets out an approach for
 operationalizing those predictors. The GIS framework outlines two
 dimensions that help predict IS spatial structure: innovation \textquotesingle mode\textquotesingle{}
 and how the innovation product is valued. Along these two dimensions, an
@@ -1117,9 +1138,9 @@ innovation mode and customized product valuation, theoretically
 positioning it as a \textquotesingle spatially sticky\textquotesingle{} regional innovation system.
 Spatially sticky systems are those where knowledge and market related
 resources are territorially embedded, making for closely knit regional
-networks (Binz and Truffer
-2017). We test this
-proposition of the GIS framework using network data collected from
+networks
+(\protect\hyperlink{ref-Binz_Truffer_2017}{Binz and Truffer 2017}). We test
+this proposition of the GIS framework using network data collected from
 surveys of organic seed innovation system actors and analyze them using
 two social network analytical approaches: n-clan analysis and
 Exponential Random Graph Models.
@@ -1128,16 +1149,16 @@ Our results point to three main findings. First, the organic seed
 networks show strong regional embeddedness in the structure of both the
 knowledge and valuation resource subsystems, supporting the GIS
 proposition that innovation mode and product valuation are strong
-predictors of IS spatial boundaries (Binz and Truffer
-2017)(\url{https://www.zotero.org/google-docs/?broken=laytXQ}). Second, our
-findings suggest that higher-scale actors encourage vertical structural
-coupling by acting as coordinating bridges between lower-scale actors
-(MacKinnon, Afewerki, and Karlsen 2022; Rohe
-2020). And third, the
-knowledge and market based subsystems are horizontally coupled, where
-activity in one subsystem positively affects activity in the other
-(Tsouri, Hanson, and Normann
-2021).
+predictors of IS spatial boundaries
+(\protect\hyperlink{ref-Binz_Truffer_2017}{Binz and Truffer 2017}). Second,
+our findings suggest that higher-scale actors encourage vertical
+structural coupling by acting as coordinating bridges between
+lower-scale actors
+(\protect\hyperlink{ref-MacKinnon_Afewerki_Karlsen_2022}{MacKinnon, Afewerki, and Karlsen 2022}; \protect\hyperlink{ref-Rohe_2020}{Rohe 2020}).
+And third, the knowledge and market based subsystems are horizontally
+coupled, where activity in one subsystem positively affects activity in
+the other
+(\protect\hyperlink{ref-Tsouri_Hanson_Normann_2021}{Tsouri, Hanson, and Normann 2021}).
 
 Altogether, these results confirm the expectations outlined by the GIS
 and add nuance to the understanding of how actors link to one another
@@ -1149,10 +1170,10 @@ one resource subsystem, pointing to actors\textquotesingle{} ability to support 
 functions and stimulate resource spillovers. The contributions made in
 this paper are part of a broader effort to add theoretical depth to
 innovation systems scholarship in order to outline generalizable
-understanding of system boundaries (Kern 2015; Markard, Hekkert, and
-Jacobsson 2015), and to
-expand the field\textquotesingle s methodological toolkit (Köhler et al.
-2019).
+understanding of system boundaries
+(\protect\hyperlink{ref-Kern_2015}{Kern 2015}; \protect\hyperlink{ref-Markard_Hekkert_Jacobsson_2015}{Markard, Hekkert, and Jacobsson 2015}),
+and to expand the field\textquotesingle s methodological toolkit
+(\protect\hyperlink{ref-Kuxf6hler_Geels_Kern_Markard_Onsongo_Wieczorek_Alkemade_Avelino_Bergek_Boons_et_al._2019}{Köhler et al. 2019}).
 
 The paper will be structured as follows. In Section 2 we review existing
 literature on the role of space in IS studies and outline the components
@@ -1175,149 +1196,146 @@ the results and their implications in Section 5 and conclude in Section
 The innovation systems (IS) perspective proposes that transitions are
 driven by a broad range of networked interactions for developing,
 promoting, and diffusing new technological and/or behavioral innovations
-(Bergek et al.~2008).
+(\protect\hyperlink{ref-Bergek_Jacobsson_Carlsson_Lindmark_Rickne_2008}{Bergek et al. 2008}).
 Where to draw the boundary around those networked interactions has long
 been of interest, resulting in several IS subfields, including national,
-regional, technological and sectoral innovation systems (Carlsson et
-al.~2002; Freeman 1995).
+regional, technological and sectoral innovation systems
+(\protect\hyperlink{ref-Carlsson_Jacobsson_Holmuxe9n_Rickne_2002}{Carlsson et al. 2002}; \protect\hyperlink{ref-Freeman_1995}{Freeman 1995}).
 While these subfields impose boundaries around an IS, geography of
 transitions scholars propose a spatial turn in order to think more
-critically about boundary-setting (Binz et al.~2020; Coenen,
-Benneworth, and Truffer 2012; Rohe
-2020). Proponents of this
-spatial turn argue that previous delineations often fail to take into
-account heterogeneity at regional levels (Rohe and Mattes
-2022), variation in
-actors\textquotesingle{} roles depending on the scale at which they operate (Wieczorek
-et al.~2015), and spillover
-from global scales (Binz, Truffer, and Coenen
-2014).
+critically about boundary-setting
+(\protect\hyperlink{ref-Binz_Coenen_Murphy_Truffer_2020}{Binz et al. 2020}; \protect\hyperlink{ref-Coenen_Benneworth_Truffer_2012}{Coenen, Benneworth, and Truffer 2012}; \protect\hyperlink{ref-Rohe_2020}{Rohe 2020}).
+Proponents of this spatial turn argue that previous delineations often
+fail to take into account heterogeneity at regional levels
+(\protect\hyperlink{ref-Rohe_Mattes_2022}{Rohe and Mattes 2022}),
+variation in actors\textquotesingle{} roles depending on the scale at which they operate
+(\protect\hyperlink{ref-Wieczorek_Hekkert_Coenen_Harmsen_2015}{Anna J. Wieczorek et al. 2015}),
+and spillover from global scales
+(\protect\hyperlink{ref-Binz_Truffer_Coenen_2014}{Binz, Truffer, and Coenen 2014}).
 
 Scholarship in the geography of transitions focuses on the effects of
 place and scale. Innovation systems are not homogenous across space, but
 rather, there can be a great deal of regional, place-based variation
-across broader innovation systems (Rohe and Mattes
-2022). This heterogeneity
-comes from innovation system functions that can be spatially \textquotesingle sticky\textquotesingle,
-meaning they are closely linked to place (Rohe 2020; Rohe and Chlebna
-2021). Beyond regional
-heterogeneity, actors operate at different scales (e.g.~local producers,
-regional organizations, national government actors, multinational
-companies). The scale at which an actor operates influences both their
-mandate and the resources they have to carry out that mandate (Bergek
-et al.~2015). For example,
-regional actors can be important bridges between local actors, as their
-mandate is to connect different geographies across shared issues (F.
-Vantaggiato et al.~2023).
-And indeed, actor roles and scales can interact, as institutional logics
-of different actors may shift as their scale of operation increases
-(Lamers et al.~2017).
-Furthermore, resources can spillover, both between regions (Kreft et
-al.~2023) and at higher
-scales through active national or international-scale actors (Wieczorek
-et al.~2015).
+across broader innovation systems
+(\protect\hyperlink{ref-Rohe_Mattes_2022}{Rohe and Mattes 2022}). This
+heterogeneity comes from innovation system functions that can be
+spatially \textquotesingle sticky\textquotesingle, meaning they are closely linked to place
+(\protect\hyperlink{ref-Rohe_2020}{Rohe 2020}; \protect\hyperlink{ref-Rohe_Chlebna_2021}{Rohe and Chlebna 2021}).
+Beyond regional heterogeneity, actors operate at different scales (e.g.
+local producers, regional organizations, national government actors,
+multinational companies). The scale at which an actor operates
+influences both their mandate and the resources they have to carry out
+that mandate
+(\protect\hyperlink{ref-Bergek_Hekkert_Jacobsson_Markard_Sanduxe9n_Truffer_2015}{Bergek et al. 2015}).
+For example, regional actors can be important bridges between local
+actors, as their mandate is to connect different geographies across
+shared issues (\protect\hyperlink{ref-Vantaggiato_Lubell_Hummel_Chow_Tcheukam_Siwe_2023}{F. Vantaggiato et al. 2023}). And indeed,
+actor roles and scales can interact, as institutional logics of
+different actors may shift as their scale of operation increases
+(\protect\hyperlink{ref-Lamers_Schut_Klerkx_Van_Asten_2017}{Lamers et al. 2017}). Furthermore,
+resources can spillover, both between regions
+(\protect\hyperlink{ref-Kreft_Angst_Huber_Finger_2023}{Kreft et al. 2023})
+and at higher scales through active national or international-scale
+actors
+(\protect\hyperlink{ref-Wieczorek_Hekkert_Coenen_Harmsen_2015}{Anna J. Wieczorek et al. 2015}).
 
 To capture the effects of place and scale on innovation system
 boundaries, Binz and Truffer (2017) develop a \textquotesingle Global Innovation
 Systems\textquotesingle{} (GIS) framework to explain the spatial distribution of IS
 resources. This framework proposes that an IS be operationalized as
 subsystems based on its different resource-building relationships
-(Binz, Truffer, and Coenen 2016; Musiolik, Markard, and Hekkert
-2012). These subsystems are
-then expected to match certain spatial characteristics based on two
-conditions: innovation mode and type of product valuation. In the
-following sections we describe the components for operationalizing an
-innovation system network and the conditions that define the GIS spatial
-typology.
+(\protect\hyperlink{ref-Binz_Truffer_Coenen_2016}{Binz, Truffer, and Coenen 2016}; \protect\hyperlink{ref-Musiolik_Markard_Hekkert_2012}{Musiolik, Markard, and Hekkert 2012}).
+These subsystems are then expected to match certain spatial
+characteristics based on two conditions: innovation mode and type of
+product valuation. In the following sections we describe the components
+for operationalizing an innovation system network and the conditions
+that define the GIS spatial typology.
 
 \hypertarget{components-of-an-innovation-system-network}{%
 \subsection{2.2 Components of an innovation system network}\label{components-of-an-innovation-system-network}}
 
 Innovation systems are often defined in terms of functions and
-structures (Wieczorek and Hekkert
-2012). Functionally,
-innovation systems rely on a series of processes that support its
-development: entrepreneurial experimentation, knowledge creation,
-collective influence on the direction of search, market formation,
-resource mobilization, and creation of legitimacy (Bergek et al.~2008;
-Hekkert et al.~2007). These
-IS functions have been synthesized to represent \textquotesingle system resources\textquotesingle{}
-provided by networks, summarized as knowledge, investment/capital,
-market, and legitimation resources (Binz, Truffer, and Coenen
-2016). Structurally, a
-diverse set of actors, institutions and their interactions relative to a
-technology are the scaffolding of an innovation system, responsible for
-supporting these functions and building system resources (Jacobsson and
-Johnson 2000; Musiolik and Markard
-2011). These two features
-of an IS, function and structure, map onto components of the GIS as a
-network: \emph{innovation subsystems} and \emph{structural coupling} (Binz and
-Truffer 2017).
+structures
+(\protect\hyperlink{ref-Wieczorek_Hekkert_2012}{Anna J. Wieczorek and Hekkert 2012}).
+Functionally, innovation systems rely on a series of processes that
+support its development: entrepreneurial experimentation, knowledge
+creation, collective influence on the direction of search, market
+formation, resource mobilization, and creation of legitimacy
+(\protect\hyperlink{ref-Bergek_Jacobsson_Carlsson_Lindmark_Rickne_2008}{Bergek et al. 2008}; \protect\hyperlink{ref-Hekkert_Suurs_Negro_Kuhlmann_Smits_2007}{Hekkert et al. 2007}).
+These IS functions have been synthesized to represent \textquotesingle system
+resources\textquotesingle{} provided by networks, summarized as knowledge,
+investment/capital, market, and legitimation resources
+(\protect\hyperlink{ref-Binz_Truffer_Coenen_2016}{Binz, Truffer, and Coenen 2016}).
+Structurally, a diverse set of actors, institutions and their
+interactions relative to a technology are the scaffolding of an
+innovation system, responsible for supporting these functions and
+building system resources
+(\protect\hyperlink{ref-Jacobsson_Johnson_2000}{Jacobsson and Johnson 2000}; \protect\hyperlink{ref-Musiolik_Markard_2011}{Musiolik and Markard 2011}).
+These two features of an IS, function and structure, map onto components
+of the GIS as a network: \emph{innovation subsystems} and \emph{structural
+coupling}
+(\protect\hyperlink{ref-Binz_Truffer_2017}{Binz and Truffer 2017}).
 
 The functions of an IS can be operationalized as innovation subsystems
-(Binz and Truffer 2017).
-These innovation subsystems are the networked relationships that arise
-to carry out a particular function, such as developing and exchanging
-knowledge, sharing resources, and creating legitimacy (Rohe
-2020). There have been
+(\protect\hyperlink{ref-Binz_Truffer_2017}{Binz and Truffer 2017}). These
+innovation subsystems are the networked relationships that arise to
+carry out a particular function, such as developing and exchanging
+knowledge, sharing resources, and creating legitimacy
+(\protect\hyperlink{ref-Rohe_2020}{Rohe 2020}). There have been
 several efforts to represent innovation subsystems based on specific
 functional relationships. For instance, knowledge creation is often
-operationalized by co-authorship (Binz, Truffer, and Coenen
-2014), joint project
-participation (van Alphen et al.~2010; Hermans et al.
-2013), or co-patents
-(Belderbos et al.~2014).
-Other functions are more rarely quantified, such as legitimacy
-(Heiberg, Binz, and Truffer 2020; Rohe and Chlebna
-2021) and resource
-mobilization (Giurca and Metz
-2018). These networks of
-functional relationships, which we will henceforth refer to as
-\textquotesingle resource-based innovation subsystems\textquotesingle, provide a basis for
+operationalized by co-authorship
+(\protect\hyperlink{ref-Binz_Truffer_Coenen_2014}{Binz, Truffer, and Coenen 2014}),
+joint project participation (\protect\hyperlink{ref-van_Alphen_Noothout_Hekkert_Turkenburg_2010}{Alphen et al. 2010}; \protect\hyperlink{ref-Hermans_Stuiver_Beers_Kok_2013}{Hermans et al. 2013}),
+or co-patents (\protect\hyperlink{ref-Belderbos_Cassiman_Faems_Leten_Van_Looy_2014}{Belderbos et al. 2014}). Other functions
+are more rarely quantified, such as legitimacy
+(\protect\hyperlink{ref-Heiberg_Binz_Truffer_2020}{Heiberg, Binz, and Truffer 2020}; \protect\hyperlink{ref-Rohe_Chlebna_2021}{Rohe and Chlebna 2021})
+and resource mobilization
+(\protect\hyperlink{ref-Giurca_Metz_2018}{Giurca and Metz 2018}). These
+networks of functional relationships, which we will henceforth refer to
+as \textquotesingle resource-based innovation subsystems\textquotesingle, provide a basis for
 operationalizing the relationships that form the networks of an IS.
 
 The connections that define the structure of an innovation subsystem are
 made by actor-to-actor relationships. For each of these actors we can
 identify certain spatial attributes: geographic place and/or operational
 scale. How these actors create connections across space is
-conceptualized as \textquotesingle structural coupling\textquotesingle{} (Binz and Truffer
-2017). Under the initial
-GIS framework, structural coupling is understood as the linkages within
-or between scales of a subsystem that enable mobilizing of innovation
-system resources. As this framework has developed, the structural
-coupling concept has been extended to include different types: vertical
-and horizontal (Rohe
-2020).
+conceptualized as \textquotesingle structural coupling\textquotesingle{}
+(\protect\hyperlink{ref-Binz_Truffer_2017}{Binz and Truffer 2017}). Under
+the initial GIS framework, structural coupling is understood as the
+linkages within or between scales of a subsystem that enable mobilizing
+of innovation system resources. As this framework has developed, the
+structural coupling concept has been extended to include different
+types: vertical and horizontal
+(\protect\hyperlink{ref-Rohe_2020}{Rohe 2020}).
 
 Vertical coupling is a linkage between actors at different geographical
 and/or operational scales. For example, actors from two different
 regions may connect to help build legitimacy for an innovation
-(MacKinnon, Afewerki, and Karlsen
-2022), or a regional-scale
-actor may connect with a national-scale actor to obtain resources like
-knowledge or funding (Rohe
-2020). The GIS emphasizes
-this latter type of connection, where higher-scale actors \textquotesingle with global
-reach\textquotesingle{} (Binz and Truffer 2017, p.1287) support lower-scale network
-actors through resource provision (Bergek et al.
-2015). However, the exact
-understanding of how scale affects coupling within and/or between scales
-of a subsystem still requires some clarity (Binz, Truffer, and Coenen
-2014; Tsouri, Hanson, and Normann
-2021).
+(\protect\hyperlink{ref-MacKinnon_Afewerki_Karlsen_2022}{MacKinnon, Afewerki, and Karlsen 2022}),
+or a regional-scale actor may connect with a national-scale actor to
+obtain resources like knowledge or funding
+(\protect\hyperlink{ref-Rohe_2020}{Rohe 2020}). The GIS
+emphasizes this latter type of connection, where higher-scale actors
+\textquotesingle with global reach\textquotesingle{} (Binz and Truffer 2017, p.1287) support
+lower-scale network actors through resource provision
+(\protect\hyperlink{ref-Bergek_Hekkert_Jacobsson_Markard_Sanduxe9n_Truffer_2015}{Bergek et al. 2015}).
+However, the exact understanding of how scale affects coupling within
+and/or between scales of a subsystem still requires some clarity
+(\protect\hyperlink{ref-Binz_Truffer_Coenen_2014}{Binz, Truffer, and Coenen 2014}; \protect\hyperlink{ref-Tsouri_Hanson_Normann_2021}{Tsouri, Hanson, and Normann 2021}).
 
 Horizontal coupling is a linkage between resource subsystems, whereby
 the resources developed in one network, such as knowledge development,
 spillover into other networks to provide resources like legitimation and
-market access (Rohe, 2020). For example, one study of Norwegian offshore
-wind power finds that spillovers between resource subsystems depend on
-the type and scales of knowledge creation activities, whereby
-higher-scale (international) R\&D collaboration improves access to
-international markets (Tsouri, Hanson, and Normann
-2021). Together, different
-forms of coupling link actors within and between places and scales, as
-well as within and between resource subsystems, all of which create the
-spatial architecture of the innovation system.
+market access (\protect\hyperlink{ref-Rohe_2020}{Rohe 2020}).
+For example, one study of Norwegian offshore wind power finds that
+spillovers between resource subsystems depend on the type and scales of
+knowledge creation activities, whereby higher-scale (international) R\&D
+collaboration improves access to international markets
+(\protect\hyperlink{ref-Tsouri_Hanson_Normann_2021}{Tsouri, Hanson, and Normann 2021}).
+Together, different forms of coupling link actors within and between
+places and scales, as well as within and between resource subsystems,
+all of which create the spatial architecture of the innovation system.
 
 \hypertarget{typology-of-subsystem-spatial-configurations}{%
 \subsection{2.3 Typology of subsystem spatial configurations}\label{typology-of-subsystem-spatial-configurations}}
@@ -1325,61 +1343,60 @@ spatial architecture of the innovation system.
 Once innovation systems have been operationalized based on their
 resource-based subsystems and structural couplings, the GIS framework
 outlines dimensions that help predict when different spatial
-configurations occur (Binz and Truffer
-2017). Those two dimensions
-are the innovation mode, related to the knowledge resource subsystem,
-and product valuation, related to the valuation resource subsystem.
+configurations occur
+(\protect\hyperlink{ref-Binz_Truffer_2017}{Binz and Truffer 2017}). Those
+two dimensions are the innovation mode, related to the knowledge
+resource subsystem, and product valuation, related to the valuation
+resource subsystem.
 
 Innovation mode describes the types of knowledge and learning that are
 required for the innovation to develop and thrive. The GIS defines two
 end-points of an innovation mode gradient, ranging from \textquotesingle science and
 technology\textquotesingle{} (ST) to \textquotesingle doing-using-interacting\textquotesingle{} (DUI) innovation
-(Jensen et al.~2007).
+(\protect\hyperlink{ref-Jensen_Johnson_Lorenz_Lundvall_2007}{Jensen et al. 2007}).
 These innovation modes align well with other conceptions of learning
-across disciplines, such as codified vs.~tacit knowledge (Binz,
-Truffer, and Coenen 2014),
-and technical vs.~social and experiential learning (Lubell, Niles, and
-Hoffman 2014). In the
-former cases, ST knowledge is formalized, typically in science-based
-industries, and can be transferred easily across contexts in forms like
-patents and designs (Jensen et al.
-2007). In the latter case,
-DUI knowledge is created through practice and application, and is rooted
-in social and experiential knowledge transfer (Gertler
-2003). Regarding space, the
-GIS proposes that innovations in the ST mode are less spatially bound
-given knowledge\textquotesingle s codification and transferability, while DUI
-innovations are more connected to specific places and contexts. The IS
-resource relevant to this dimension is the knowledge resource, whereby
-relationships for creating and diffusing knowledge form the knowledge
-subsystem (Binz and Truffer
-2020).
+across disciplines, such as codified vs.~tacit knowledge
+(\protect\hyperlink{ref-Binz_Truffer_Coenen_2014}{Binz, Truffer, and Coenen 2014}),
+and technical vs.~social and experiential learning
+(\protect\hyperlink{ref-Lubell_Niles_Hoffman_2014}{Lubell, Niles, and Hoffman 2014}).
+In the former cases, ST knowledge is formalized, typically in
+science-based industries, and can be transferred easily across contexts
+in forms like patents and designs
+(\protect\hyperlink{ref-Jensen_Johnson_Lorenz_Lundvall_2007}{Jensen et al. 2007}).
+In the latter case, DUI knowledge is created through practice and
+application, and is rooted in social and experiential knowledge transfer
+(\protect\hyperlink{ref-Gertler_2003}{Gertler 2003}). Regarding
+space, the GIS proposes that innovations in the ST mode are less
+spatially bound given knowledge\textquotesingle s codification and transferability,
+while DUI innovations are more connected to specific places and
+contexts. The IS resource relevant to this dimension is the knowledge
+resource, whereby relationships for creating and diffusing knowledge
+form the knowledge subsystem
+(\protect\hyperlink{ref-Binz_Truffer_2020}{Binz and Truffer 2020}).
 
 The product valuation dimension describes how a product is valued by
-users (Binz and Truffer
-2017). The GIS framework
-identifies a gradient of valuation systems from standardized to
-customized (Jeannerat and Kebir
-2016). Standardized
-valuation is where \textquotesingle consumption and legitimacy are stabilized around
-clearly identified goods, services, and brands\textquotesingle{} (Binz and Truffer 2017,
-p.1289). Products and services with customized valuation, in contrast,
-build legitimacy and market-following based on the specialization of
-their products to particular contexts (Jeannerat and Kebir
-2016). This valuation
-gradient aligns with different organizational types of value chains,
-which contrast hierarchical, formalized and industrialized value chains
-from democratic and territorially embedded value chains (Duncan and
-Pascucci 2017; Gaitán-Cremaschi et al.
-2018). Regarding space, the
-GIS proposes that goods with standardized valuation can supply different
-regional contexts without customization, and are therefore easily
-transferable, where the same cannot be said for customized products. The
-innovation system resources relevant to this dimension are the resource
-mobilization, market formation, and legitimacy resources, whereby
-material transfer, supply chain, and coalition building relationships
-form the \textquotesingle valuation subsystem\textquotesingle{} (Binz and Truffer
-2020).
+users (\protect\hyperlink{ref-Binz_Truffer_2017}{Binz and Truffer 2017}).
+The GIS framework identifies a gradient of valuation systems from
+standardized to customized
+(\protect\hyperlink{ref-Jeannerat_Kebir_2016}{Jeannerat and Kebir 2016}).
+Standardized valuation is where \textquotesingle consumption and legitimacy are
+stabilized around clearly identified goods, services, and brands\textquotesingle{} (Binz
+and Truffer 2017, p.1289). Products and services with customized
+valuation, in contrast, build legitimacy and market-following based on
+the specialization of their products to particular contexts
+(\protect\hyperlink{ref-Jeannerat_Kebir_2016}{Jeannerat and Kebir 2016}). This
+valuation gradient aligns with different organizational types of value
+chains, which contrast hierarchical, formalized and industrialized value
+chains from democratic and territorially embedded value chains
+(\protect\hyperlink{ref-Duncan_Pascucci_2017}{Duncan and Pascucci 2017}; \protect\hyperlink{ref-Gaituxe1n-Cremaschi_Klerkx_Duncan_Trienekens_Huenchuleo_Dogliotti_Contesse_Rossing_2018}{Gaitán-Cremaschi et al. 2018}).
+Regarding space, the GIS proposes that goods with standardized valuation
+can supply different regional contexts without customization, and are
+therefore easily transferable, where the same cannot be said for
+customized products. The innovation system resources relevant to this
+dimension are the resource mobilization, market formation, and
+legitimacy resources, whereby material transfer, supply chain, and
+coalition building relationships form the \textquotesingle valuation subsystem\textquotesingle{}
+(\protect\hyperlink{ref-Binz_Truffer_2020}{Binz and Truffer 2020}).
 
 Together, the innovation mode and product valuation dimensions of the
 GIS create a two-by-two typology (Figure 2.1). This typology proposes
@@ -1409,18 +1426,17 @@ height=``3.834511154855643in''\}
 \caption{Global Innovation System typology, modified from Binz and Truffer 2017}\label{fig:unnamed-chunk-14}
 \end{figure}
 Of course, these are stylized types that omit other complex dimensions
-(Binz and Truffer 2017).
-For instance, different parts of an innovation\textquotesingle s value chain may exist
-in different quadrants of the typology (Rohe
-2020), knowledge creation
-approaches may try to balance both ST and DUI modes (Jensen et al.
-2007; Tsouri, Hanson, and Normann
-2021), and placement on the
-typology may change over time (Binz and Truffer
-2017). However, this
-framework sets out a baseline for theory building across several complex
-dimensions, which is a contribution for developing a more generalizable
-understanding of how and why systems evolve.
+(\protect\hyperlink{ref-Binz_Truffer_2017}{Binz and Truffer 2017}). For
+instance, different parts of an innovation\textquotesingle s value chain may exist in
+different quadrants of the typology
+(\protect\hyperlink{ref-Rohe_2020}{Rohe 2020}), knowledge
+creation approaches may try to balance both ST and DUI modes
+(\protect\hyperlink{ref-Jensen_Johnson_Lorenz_Lundvall_2007}{Jensen et al. 2007}; \protect\hyperlink{ref-Tsouri_Hanson_Normann_2021}{Tsouri, Hanson, and Normann 2021}),
+and placement on the typology may change over time
+(\protect\hyperlink{ref-Binz_Truffer_2017}{Binz and Truffer 2017}).
+However, this framework sets out a baseline for theory building across
+several complex dimensions, which is a contribution for developing a
+more generalizable understanding of how and why systems evolve.
 
 \hypertarget{organic-seed-innovation-system}{%
 \subsection{2.4 Organic seed innovation system}\label{organic-seed-innovation-system}}
@@ -1429,8 +1445,7 @@ To test the GIS theory predicting the spatial boundaries of an
 innovation system, we use the case of the organic seed system. Seed
 systems represent technological (and in some cases social) innovations
 for researching, producing, processing and selling seeds suitable for
-agricultural production (Almekinders and Louwaars 2002; Lammerts van
-Bueren et al.~2018). Seed
+agricultural production (\protect\hyperlink{ref-Almekinders_Louwaars_2002}{Almekinders and Louwaars 2002}; \protect\hyperlink{ref-Lammerts_van_Bueren_Struik_van_Eekeren_Nuijten_2018}{Lammerts van Bueren et al. 2018}). Seed
 researchers develop and test new plant varieties through breeding
 techniques, seed producers grow crops to harvest and sell their seed,
 and seed processors and companies are the industries that process the
@@ -1442,47 +1457,46 @@ saving, and certification.
 The \emph{organic} seed system represents a niche that, at minimum, follows
 certified organic standards throughout the innovation\textquotesingle s life cycle, and
 at most, represents an alternative social-ecological approach to genetic
-stewardship, land use, and community-building (Lammerts van Bueren et
-al.~2018). We base our
-study in the United States (US) organic seed system, but collect data so
-as to open the boundaries of our system beyond national borders,
-described in Section 3.1. In the US, certified organic crop production
-is a niche system supporting less than 1\% of farmland (Bialik and
-Walker 2019), nested within
-the broader conventional agricultural innovation system (Rohe et al.
-2022). Historically in the
-US, the organic movement was borne out of a grassroots effort where the
-values of soil health and localized food systems are generally shared
-amongst the stakeholders (Youngberg and DeMuth
-2013). This ethic has
-extended to seed, where values of biodiversity stewardship,
-decentralized ownership, and producer sovereignty are prominent among
-organic seed stakeholders (Sievers-Glotzbach et al.~2020; Wood
-2022).
+stewardship, land use, and community-building (\protect\hyperlink{ref-Lammerts_van_Bueren_Struik_van_Eekeren_Nuijten_2018}{Lammerts van Bueren et al. 2018}). We
+base our study in the United States (US) organic seed system, but
+collect data so as to open the boundaries of our system beyond national
+borders, described in Section 3.1. In the US, certified organic crop
+production is a niche system supporting less than 1\% of farmland
+(\protect\hyperlink{ref-Bialik_Walker_2019}{Bialik and Walker 2019}), nested
+within the broader conventional agricultural innovation system
+(\protect\hyperlink{ref-Rohe_Oltmer_Wolter_Gmeiner_Tschersich_2022}{Rohe et al. 2022}).
+Historically in the US, the organic movement was borne out of a
+grassroots effort where the values of soil health and localized food
+systems are generally shared amongst the stakeholders
+(\protect\hyperlink{ref-Youngberg_DeMuth_2013}{Youngberg and DeMuth 2013}).
+This ethic has extended to seed, where values of biodiversity
+stewardship, decentralized ownership, and producer sovereignty are
+prominent among organic seed stakeholders
+(\protect\hyperlink{ref-Sievers-Glotzbach_Tschersich_Gmeiner_Kliem_Ficiciyan_2020}{Sievers-Glotzbach et al. 2020}).
 
 The organic seed niche theoretically aligns with the dimensions of a
 spatially sticky innovation system. While the knowledge to breed and
 produce seed certainly requires technical skills, agricultural
 production is a practice that is rooted to place. Furthermore, organic
 seed breeding permits only the use of traditional breeding methods (e.g.
-hybridization but not genetic modification) (Hubbard, Zystro, and Wood
-2022), which places tacit
-knowledge, or \textquotesingle doing-using-interacting\textquotesingle{} innovation, at the center of
-plant breeding and production rather than science and technology.
+hybridization but not genetic modification)
+(\protect\hyperlink{ref-Hubbard_Zystro_Wood_2022}{Hubbard, Zystro, and Wood 2022}),
+which places tacit knowledge, or \textquotesingle doing-using-interacting\textquotesingle{} innovation,
+at the center of plant breeding and production rather than science and
+technology.
 
 Regarding valuation, the grassroots history of the organic movement has
 generated a market environment where products are valued for their
-regional adaptedness (Lammerts van Bueren et al.~2018; Rohe et al.
-2022). Seeds that are
-adapted to the climates, soil types, pest pressures, and cultural
-histories of a given region are particularly important for organic
-production, both for optimal productivity as well as regional
-biodiversity maintenance (Hubbard, Zystro, and Wood
-2022). This customized
-approach contrasts from conventional seed and crop valuation, which aims
-to create more spatially footloose products that can compete in a
-standardized commodity market (Rohe et al.
-2022).\footnote{System resources (also called \textquotesingle elements\textquotesingle) and IS functions
+regional adaptedness (\protect\hyperlink{ref-Lammerts_van_Bueren_Struik_van_Eekeren_Nuijten_2018}{Lammerts van Bueren et al. 2018}; \protect\hyperlink{ref-Rohe_Oltmer_Wolter_Gmeiner_Tschersich_2022}{Rohe et al. 2022}).
+Seeds that are adapted to the climates, soil types, pest pressures, and
+cultural histories of a given region are particularly important for
+organic production, both for optimal productivity as well as regional
+biodiversity maintenance
+(\protect\hyperlink{ref-Hubbard_Zystro_Wood_2022}{Hubbard, Zystro, and Wood 2022}).
+This customized approach contrasts from conventional seed and crop
+valuation, which aims to create more spatially footloose products that
+can compete in a standardized commodity market
+(\protect\hyperlink{ref-Rohe_Oltmer_Wolter_Gmeiner_Tschersich_2022}{Rohe et al. 2022}).\footnote{System resources (also called \textquotesingle elements\textquotesingle) and IS functions
   generally map onto one another (Binz et al.~2016; Musiolik et al.
   2011). Musiolik et al.~2011 describe: ``System elements provide
   positive externalities such as public financial support, the
@@ -1520,13 +1534,13 @@ and within-region homophily
 Beyond coupling within-regions, we also evaluate the importance of
 vertical and horizontal structural coupling. While the GIS suggests that
 spatially sticky systems structurally couple within and between regions
-(Binz and Truffer 2020),
-there is less clarity on how national actors connect across scales,
-identified as the vertical coupling process. Thus we further the theory
-by proposing that within a regionally sticky system, higher-scale actors
+(\protect\hyperlink{ref-Binz_Truffer_2020}{Binz and Truffer 2020}), there
+is less clarity on how national actors connect across scales, identified
+as the vertical coupling process. Thus we further the theory by
+proposing that within a regionally sticky system, higher-scale actors
 will provide both knowledge and market-based resources by acting as
-coordinators (Bergek et al.~2015; F. Vantaggiato et al.
-2023). Specifically, we
+coordinators
+(\protect\hyperlink{ref-Bergek_Hekkert_Jacobsson_Markard_Sanduxe9n_Truffer_2015}{Bergek et al. 2015}; \protect\hyperlink{ref-Vantaggiato_Lubell_Hummel_Chow_Tcheukam_Siwe_2023}{F. Vantaggiato et al. 2023}). Specifically, we
 hypothesize:
 \begin{quote}
 H2: National and international-scale actors will be serve as bridges
@@ -1534,9 +1548,9 @@ between regional-scale actors, operationalized by national-actor
 heterophily and the prevalence of national-actor network connections
 \end{quote}
 Further, we contribute to the developing examples of resource subsystem
-spillovers via horizontal coupling (Musiolik and Markard 2011; Rohe
-2020; Tsouri, Hanson, and Normann
-2021) by hypothesizing:
+spillovers via horizontal coupling
+(\protect\hyperlink{ref-Musiolik_Markard_2011}{Musiolik and Markard 2011}; \protect\hyperlink{ref-Rohe_2020}{Rohe 2020}; \protect\hyperlink{ref-Tsouri_Hanson_Normann_2021}{Tsouri, Hanson, and Normann 2021})
+by hypothesizing:
 \begin{quote}
 H3: Actors\textquotesingle{} participation in one innovation subsystem will positively
 influence participation in the other, operationalized by positive
@@ -1593,13 +1607,13 @@ widened the scope of our respondents to include actors from other
 geographies. In total, we identified 756 actors in the organic seed
 innovation system, summarized by their geographic and scale
 categorizations in Table 2.1. While setting boundaries around innovation
-systems is a core challenge to the field (Bergek et al.
-2008), we believe this
-identification approach captures a wide range of both formal and
-informal actors across multiple innovation system functions. And while
-our population started with a national focus, the snowball sampling
-approach accounted for the innovation system relationships that span
-territorial boundaries.
+systems is a core challenge to the field
+(\protect\hyperlink{ref-Bergek_Jacobsson_Carlsson_Lindmark_Rickne_2008}{Bergek et al. 2008}),
+we believe this identification approach captures a wide range of both
+formal and informal actors across multiple innovation system functions.
+And while our population started with a national focus, the snowball
+sampling approach accounted for the innovation system relationships that
+span territorial boundaries.
 
 \hypertarget{survey-development-distribution-and-sample}{%
 \subsubsection{3.1.2 Survey development, distribution and sample}\label{survey-development-distribution-and-sample}}
@@ -1617,16 +1631,15 @@ breeding and exchanging seed.
 Surveys were hosted on the Qualtrics survey platform and distributed
 over email. Each potential respondent was sent an initial email
 invitation with three reminders, spaced out every two to three weeks
-(Dillman, Smyth, and Christian
-2014). Seed producers,
-researchers, and all snowball-sampled respondents were eligible for
-survey completion incentives. In the case of seed producers, respondents
-who completed the survey were put into a lottery system, in which 10
-respondents were awarded \$100 Visa gift cards. For seed researchers,
-each respondent earned a \$40 award in the form of cash, gift card, or
-donation to an organization of their choosing. For the snowball sample,
-each respondent earned a \$25 award in the form of cash, gift card, or
-donation to an organization of their choosing.
+(\protect\hyperlink{ref-Dillman_Smyth_Christian_2014}{Dillman, Smyth, and Christian 2014}).
+Seed producers, researchers, and all snowball-sampled respondents were
+eligible for survey completion incentives. In the case of seed
+producers, respondents who completed the survey were put into a lottery
+system, in which 10 respondents were awarded \$100 Visa gift cards. For
+seed researchers, each respondent earned a \$40 award in the form of
+cash, gift card, or donation to an organization of their choosing. For
+the snowball sample, each respondent earned a \$25 award in the form of
+cash, gift card, or donation to an organization of their choosing.
 
 Out of those we surveyed, we have responses from 247 actors across the
 different roles for a combined response rate of 33\%. Based on data from
@@ -1687,20 +1700,21 @@ Total & 756 & 247 & 33 & 645\\
 
 We constructed the innovation system network using the survey questions
 related to actors\textquotesingle{} connections. These connections were elicited using
-the \textquotesingle hybrid\textquotesingle{} network question approach (Henry, Lubell, and McCoy
-2012). Using this approach,
-respondents were asked to list up to five or ten people or organizations
-(number varied with question) that they look to, work with, or source
-from across several seed-related contexts. For each name they wrote,
-respondents had the option to select the modes of each connection. We
-match the types of connections to the functions described in the
-innovation system functional framework (Bergek et al.
-2008): knowledge creation,
-resource mobilization, and market formation (Table 2.2). We then use
-these connections to create our key units of analysis: the two
-resource-based innovation subsystems as defined in the GIS framework
-(Binz and Truffer 2017).
-The knowledge subsystem includes connections related to information
+the \textquotesingle hybrid\textquotesingle{} network question approach
+(\protect\hyperlink{ref-Henry_Lubell_McCoy_2012}{Henry, Lubell, and McCoy 2012}).
+Using this approach, respondents were asked to list up to five or ten
+people or organizations (number varied with question) that they look to,
+work with, or source from across several seed-related contexts. For each
+name they wrote, respondents had the option to select the modes of each
+connection. We match the types of connections to the functions described
+in the innovation system functional framework
+(\protect\hyperlink{ref-Bergek_Jacobsson_Carlsson_Lindmark_Rickne_2008}{Bergek et al. 2008}):
+knowledge creation, resource mobilization, and market formation (Table
+2.2). We then use these connections to create our key units of analysis:
+the two resource-based innovation subsystems as defined in the GIS
+framework
+(\protect\hyperlink{ref-Binz_Truffer_2017}{Binz and Truffer 2017}). The
+knowledge subsystem includes connections related to information
 acquisition and exchange, research partnerships, stakeholder involvement
 in projects, and academic collaborations. The valuation subsystem
 combines the resource mobilization and market formation functions, which
@@ -1757,10 +1771,10 @@ and geography. We further this description by evaluating the composition
 of spatial representation across clans in the subsystems. Clans are
 cohesive subgroups within a network where the greatest distance between
 any two nodes in the subgroup is no larger than the assigned path length
-value (n) (Binz, Truffer, and Coenen 2014; Wasserman and Faust
-1994). We identify clans
-with a maximum path length value of 2 for each innovation subsystem to
-detect small, cohesive units.
+value (n)
+(\protect\hyperlink{ref-Binz_Truffer_Coenen_2014}{Binz, Truffer, and Coenen 2014}; \protect\hyperlink{ref-Wasserman_Faust_1994}{Wasserman and Faust 1994}).
+We identify clans with a maximum path length value of 2 for each
+innovation subsystem to detect small, cohesive units.
 
 Once we identify the clans, we then categorize each of them based on
 their spatial composition, which we determine based on actors\textquotesingle{}
@@ -1785,34 +1799,35 @@ In short, the n-clan approach provides a cursory look at what geographic
 and/or scale attributes dominate within small communities of the
 subsystem. This analytical approach is considered structurally
 descriptive, in that we utilize our network data to summarize spatial
-information about our innovation subsystems (Scott and Ulibarri
-2019). These n-clan
-categorizations can suggest a trend in spatial structure, but this
-method is limited in the ability to statistically test within or between
-scale preference and prevalence.
+information about our innovation subsystems
+(\protect\hyperlink{ref-Scott_Ulibarri_2019}{Scott and Ulibarri 2019}). These
+n-clan categorizations can suggest a trend in spatial structure, but
+this method is limited in the ability to statistically test within or
+between scale preference and prevalence.
 
 \hypertarget{ergms}{%
 \subsubsection{3.3.2 ERGMs}\label{ergms}}
 
 To expand on the n-clan descriptive approach, we propose Exponential
-Random Graph Models (ERGMs) (Lusher, Koskinen, and Robins
-2012), a structurally
-explicit way to statistically infer meaning from network structures
-(Scott and Ulibarri 2019).
-ERGMs are a well-developed network method (Lubell et al.
-2012) that estimate the
-likelihood that a network tie will form based on endogenous and
-exogenous predictors (Robins, Lewis, and Wang
-2012). Endogenous
-predictors are the features of the network itself, such as the number of
-connections and nodes, open and closed triangle formations, among many
-others. Exogenous predictors are features of the nodes in the network,
-which in the case of this study include an actors\textquotesingle{} spatial attributes.
-An ERGM then estimates the likelihood that these features influence tie
-formation in the observed network by simulating thousands of random
-graphs that have the same structural parameters as those specified in
-the model (Robins, Lewis, and Wang
-2012).
+Random Graph Models (ERGMs)
+(\protect\hyperlink{ref-Lusher_Koskinen_Robins_2012}{Lusher, Koskinen, and Robins 2012}),
+a structurally explicit way to statistically infer meaning from network
+structures
+(\protect\hyperlink{ref-Scott_Ulibarri_2019}{Scott and Ulibarri 2019}). ERGMs
+are a well-developed network method
+(\protect\hyperlink{ref-Lubell_Scholz_Berardo_Robins_2012}{Lubell et al. 2012})
+that estimate the likelihood that a network tie will form based on
+endogenous and exogenous predictors
+(\protect\hyperlink{ref-Robins_Lewis_Wang_2012}{Robins, Lewis, and Wang 2012}).
+Endogenous predictors are the features of the network itself, such as
+the number of connections and nodes, open and closed triangle
+formations, among many others. Exogenous predictors are features of the
+nodes in the network, which in the case of this study include an
+actors\textquotesingle{} spatial attributes. An ERGM then estimates the likelihood that
+these features influence tie formation in the observed network by
+simulating thousands of random graphs that have the same structural
+parameters as those specified in the model
+(\protect\hyperlink{ref-Robins_Lewis_Wang_2012}{Robins, Lewis, and Wang 2012}).
 
 To test our hypotheses regarding the spatial structure of the organic
 seed innovation system, our results focus on two exogenous actor
@@ -1837,14 +1852,14 @@ between resource subsystems (H3).
 We also include seven endogenous structural terms as control variables.
 The first three, edges, degree, and triadic closure, are common
 structural parameters to account for social processes that take place in
-the network (Lusher, Koskinen, and Robins
-2012). Edges represent a
-baseline probability a forming a tie, degree (specified with
-geometrically weighting, \textquotesingle gwdegree\textquotesingle) represents the network\textquotesingle s
-tendency towards centralization, and triadic closure (specified as
-geometrically weighted edgewise shared partners, \textquotesingle gwesp\textquotesingle), represents
-the likelihood of a connection to close a triangle (Levy and Lubell
-2018).
+the network
+(\protect\hyperlink{ref-Lusher_Koskinen_Robins_2012}{Lusher, Koskinen, and Robins 2012}).
+Edges represent a baseline probability a forming a tie, degree
+(specified with geometrically weighting, \textquotesingle gwdegree\textquotesingle) represents the
+network\textquotesingle s tendency towards centralization, and triadic closure
+(specified as geometrically weighted edgewise shared partners,
+\textquotesingle gwesp\textquotesingle), represents the likelihood of a connection to close a
+triangle (\protect\hyperlink{ref-Levy_Lubell_2018}{Levy and Lubell 2018}).
 
 The last four parameters are controls to account for the effect of the
 data collection process on network sampling. These include a count of
@@ -1859,15 +1874,15 @@ non-respondents are likely to have fewer ties given that they could not
 identify their relationships. Relatedly, our last control parameter is a
 matrix of \textquotesingle structural zeroes\textquotesingle{} to specify that it was impossible for
 two actors, neither of which responded to the survey, to have a
-connection (Scott and Thomas
-2015).
+connection
+(\protect\hyperlink{ref-Scott_Thomas_2015}{Scott and Thomas 2015}).
 
 We estimate two ERGMs, one for each innovation subsystem, in order to
 identify the variables that most influence network formation. All
 analyses were conducted using R statistical software, relying primarily
-on the `statnet` package (Handcock et al.
-2019) for analysis. Code is
-available at
+on the `statnet` package
+(\protect\hyperlink{ref-Handcock_Hunter_Butts_Goodreau_Krivitsky_Bender-deMoll_Morris_2019}{Handcock et al. 2019})
+for analysis. Code is available at
 \href{https://github.com/liza-wood/osisn_spatial}{{[}https://github.com/liza-wood/osisn\_spatial{]}}
 and data is available upon request.
 
@@ -2034,51 +2049,49 @@ resource-based subsystems have strong within-region affinity (i.e.~they
 are spatially sticky). By finding support for the GIS typology, this
 paper contributes to the theory-building effort of the framework: to
 identify the conditions under which innovation systems form and build
-resources (Binz and Truffer
-2017). This contribution is
-part of a broader effort to add theoretical depth to innovation systems
-scholarship in order to outline generalizable understanding of system
-boundaries (Markard, Hekkert, and Jacobsson
-2015).
+resources
+(\protect\hyperlink{ref-Binz_Truffer_2017}{Binz and Truffer 2017}). This
+contribution is part of a broader effort to add theoretical depth to
+innovation systems scholarship in order to outline generalizable
+understanding of system boundaries
+(\protect\hyperlink{ref-Markard_Hekkert_Jacobsson_2015}{Markard, Hekkert, and Jacobsson 2015}).
 
 This paper is among the handful of studies that have begun to test the
-GIS across different empirical cases (MacKinnon, Afewerki, and Karlsen
-2022; Rohe 2020; Tsouri, Hanson, and Normann
-2021). The majority of
-these studies relate to alternative energy (e.g.~wind power), which tend
-to represent a mix of sticky and footloose spatial structure that rely,
-to some extent, on strong global networks (ibid). And sustainability
-transitions more generally tend to focus on innovations that rely more
-on codified ST-based knowledge and products with more standardized
-valuation (Köhler et al.
-2019). Under the conditions
-of a DUI innovation mode and customized valuation subsystem, as in the
-organic seed case, we provide an important complement to existing
-studies and highlight the importance of regionally-based networks (Rohe
-and Mattes 2022).
+GIS across different empirical cases
+(\protect\hyperlink{ref-MacKinnon_Afewerki_Karlsen_2022}{MacKinnon, Afewerki, and Karlsen 2022}; \protect\hyperlink{ref-Rohe_2020}{Rohe 2020}; \protect\hyperlink{ref-Tsouri_Hanson_Normann_2021}{Tsouri, Hanson, and Normann 2021}).
+The majority of these studies relate to alternative energy (e.g.~wind
+power), which tend to represent a mix of sticky and footloose spatial
+structure that rely, to some extent, on strong global networks (ibid).
+And sustainability transitions more generally tend to focus on
+innovations that rely more on codified ST-based knowledge and products
+with more standardized valuation
+(\protect\hyperlink{ref-Kuxf6hler_Geels_Kern_Markard_Onsongo_Wieczorek_Alkemade_Avelino_Bergek_Boons_et_al._2019}{Köhler et al. 2019}). Under the
+conditions of a DUI innovation mode and customized valuation subsystem,
+as in the organic seed case, we provide an important complement to
+existing studies and highlight the importance of regionally-based
+networks (\protect\hyperlink{ref-Rohe_Mattes_2022}{Rohe and Mattes 2022}).
 
 The recognition that IS boundary-setting varies based on certain
 conditions has important implications for the field. For innovation
 studies researchers and policy makers alike, these conditions serve as a
 guide on how to best select boundaries, which has important consequences
 for measuring the development and success of an innovation system
-(Binz, Truffer, and Coenen 2014; Wieczorek et al.
-2015), as well as setting
-effective policies.
+(\protect\hyperlink{ref-Binz_Truffer_Coenen_2014}{Binz, Truffer, and Coenen 2014}; \protect\hyperlink{ref-Wieczorek_Hekkert_Coenen_Harmsen_2015}{Anna J. Wieczorek et al. 2015}),
+as well as setting effective policies.
 
 Beyond validating the theory outlined by the GIS, we also add nuance to
 the understanding of how subsystems link to one another within and
 across space by testing the prevalence of both vertical and horizontal
-coupling within the organic seed system (Rohe 2020; Tsouri, Hanson, and
-Normann 2021). We find that
-even in an IS rooted in strong regional networks, higher-scale actors at
-the national and international scales have important roles to play as
-bridges between regional networks. This result aligns generally with
-expectations highlighted in the geography and innovation systems
-literature (Binz, Truffer, and Coenen 2014; Wieczorek et al.
-2015) and more broadly in
-network governance studies (F. Vantaggiato et al.
-2023).
+coupling within the organic seed system
+(\protect\hyperlink{ref-Rohe_2020}{Rohe 2020}; \protect\hyperlink{ref-Tsouri_Hanson_Normann_2021}{Tsouri, Hanson, and Normann 2021}).
+We find that even in an IS rooted in strong regional networks,
+higher-scale actors at the national and international scales have
+important roles to play as bridges between regional networks. This
+result aligns generally with expectations highlighted in the geography
+and innovation systems literature
+(\protect\hyperlink{ref-Binz_Truffer_Coenen_2014}{Binz, Truffer, and Coenen 2014}; \protect\hyperlink{ref-Wieczorek_Hekkert_Coenen_Harmsen_2015}{Anna J. Wieczorek et al. 2015})
+and more broadly in network governance studies
+(\protect\hyperlink{ref-Vantaggiato_Lubell_Hummel_Chow_Tcheukam_Siwe_2023}{F. Vantaggiato et al. 2023}).
 
 Relevant to the vertical coupling results, we want to emphasize a
 distinction between two types of vertical coupling. First, there is
@@ -2093,51 +2106,48 @@ actors. While we only observed the latter in our case, we propose that
 researchers should continue to identify the different ways in which
 actors\textquotesingle{} scales and roles affect the types of coupling they engage in,
 and the different forms that structure can take (e.g.~supporting
-coordination or cooperation (Berardo and Scholz
-2010)).
+coordination or cooperation
+(\protect\hyperlink{ref-Berardo_Scholz_2010}{Berardo and Scholz 2010})).
 
 Regarding horizontal coupling, the effect of one resource-based
 subsystem on another, we find evidence for strong between-subsystem
 spillover effects. In the organic seed system, actors\textquotesingle{} participation in
 one innovation subsystem positively influenced participation in the
-other, pointing to the multi-functionality of network relationships (F.
-P. Vantaggiato and Lubell
-2022). While our analysis
-is not able to distinguish the effect of scale on spillover, which has
-been relevant in other cases (Tsouri, Hanson, and Normann
-2021), it is a first step
-to quantify horizontal coupling using network methods.
+other, pointing to the multi-functionality of network relationships
+(\protect\hyperlink{ref-Vantaggiato_Lubell_2022}{F. P. Vantaggiato and Lubell 2022}).
+While our analysis is not able to distinguish the effect of scale on
+spillover, which has been relevant in other cases
+(\protect\hyperlink{ref-Tsouri_Hanson_Normann_2021}{Tsouri, Hanson, and Normann 2021}),
+it is a first step to quantify horizontal coupling using network
+methods.
 
 \hypertarget{contributions-to-is-network-methods}{%
 \subsection{5.2 Contributions to IS network methods}\label{contributions-to-is-network-methods}}
 
 The analytical approaches used in this paper add to the methodological
 toolkit of innovation research. While network analysis is certainly not
-new to innovation studies ((van Alphen et al.~2010; Hermans et al.
-2013; Musiolik, Markard, and Hekkert
-2012), we employ an
-Exponential Random Graph Modeling approach which is seldom applied to
-this field (Hermans et al.
-2017). We link the results
-from the ERGM to a network approach previously applied to innovation
-systems, n-clan composition (Binz, Truffer, and Coenen
-2014), to provide a bridge
-between descriptive methods (e.g.~(Giurca and Metz 2018; Rohe and
-Chlebna 2022) and
-structurally explicit methods (Scott and Ulibarri
-2019).
+new to innovation studies ((\protect\hyperlink{ref-van_Alphen_Noothout_Hekkert_Turkenburg_2010}{Alphen et al. 2010}; \protect\hyperlink{ref-Hermans_Stuiver_Beers_Kok_2013}{Hermans et al. 2013}; \protect\hyperlink{ref-Musiolik_Markard_Hekkert_2012}{Musiolik, Markard, and Hekkert 2012}),
+we employ an Exponential Random Graph Modeling approach which is seldom
+applied to this field (\protect\hyperlink{ref-Hermans_Sartas_Van_Schagen_Van_Asten_Schut_2017}{Hermans et al. 2017}). We link
+the results from the ERGM to a network approach previously applied to
+innovation systems, n-clan composition
+(\protect\hyperlink{ref-Binz_Truffer_Coenen_2014}{Binz, Truffer, and Coenen 2014}),
+to provide a bridge between descriptive methods (e.g.
+(\protect\hyperlink{ref-Giurca_Metz_2018}{Giurca and Metz 2018}; \protect\hyperlink{ref-Rohe_Chlebna_2022}{Rohe and Chlebna 2022})
+and structurally explicit methods
+(\protect\hyperlink{ref-Scott_Ulibarri_2019}{Scott and Ulibarri 2019}).
 
 The application of ERGMs in this paper heeds the call for new, rigorous
-methods for analyzing innovation systems (Binz and Truffer 2017; Binz,
-Truffer, and Coenen 2014)
-and sustainability transitions more generally (Köhler et al.
-2019). And indeed, it is
-among other quantitative contributions for enriching the way we
-understand relational data (Heiberg, Truffer, and Binz
-2022), test theory, and it
-is a complement to the studies that have analyzed GIS using qualitative
-methods (MacKinnon, Afewerki, and Karlsen 2022; Rohe
-2020).
+methods for analyzing innovation systems
+(\protect\hyperlink{ref-Binz_Truffer_2017}{Binz and Truffer 2017}; \protect\hyperlink{ref-Binz_Truffer_Coenen_2014}{Binz, Truffer, and Coenen 2014})
+and sustainability transitions more generally
+(\protect\hyperlink{ref-Kuxf6hler_Geels_Kern_Markard_Onsongo_Wieczorek_Alkemade_Avelino_Bergek_Boons_et_al._2019}{Köhler et al. 2019}). And indeed, it
+is among other quantitative contributions for enriching the way we
+understand relational data
+(\protect\hyperlink{ref-Heiberg_Truffer_Binz_2022}{Heiberg, Truffer, and Binz 2022}),
+test theory, and it is a complement to the studies that have analyzed
+GIS using qualitative methods
+(\protect\hyperlink{ref-MacKinnon_Afewerki_Karlsen_2022}{MacKinnon, Afewerki, and Karlsen 2022}; \protect\hyperlink{ref-Rohe_2020}{Rohe 2020}).
 
 \hypertarget{limitations}{%
 \subsection{5.3 Limitations}\label{limitations}}
@@ -2169,16 +2179,16 @@ collection process may affect conclusions about system boundaries.
 In this paper, we address a question of both academic and policy
 relevance in innovation studies: \emph{What determines the spatial boundaries
 of an innovation system?} We develop three hypotheses to test the theory
-put forth by the Global Innovation Systems framework (Binz and Truffer
-2017; Rohe 2020; Tsouri, Hanson, and Normann
-2021). We use the case of
-the organic seed system, a niche with a DUI innovation mode and
-relatively customized type of product valuation, to validate the GIS
-typology and extend our understanding of structural coupling within and
-between innovation subsystems. By applying structurally explicitly
-network analysis, Exponential Random Graph Models, we confirm the
-expectations outlined by the GIS and add nuance to the understanding of
-how actors link to one another within and across spatial scales.
+put forth by the Global Innovation Systems framework
+(\protect\hyperlink{ref-Binz_Truffer_2017}{Binz and Truffer 2017}; \protect\hyperlink{ref-Rohe_2020}{Rohe 2020}; \protect\hyperlink{ref-Tsouri_Hanson_Normann_2021}{Tsouri, Hanson, and Normann 2021}).
+We use the case of the organic seed system, a niche with a DUI
+innovation mode and relatively customized type of product valuation, to
+validate the GIS typology and extend our understanding of structural
+coupling within and between innovation subsystems. By applying
+structurally explicitly network analysis, Exponential Random Graph
+Models, we confirm the expectations outlined by the GIS and add nuance
+to the understanding of how actors link to one another within and across
+spatial scales.
 
 This research contributes to the theoretical underpinnings of the GIS,
 as well as adds to the methodological toolkit for analyzing innovation
@@ -2189,8 +2199,7 @@ to an innovation system can help policymakers identify the scope of
 relevant policy. In organic seed, for example, recognizing its spatial
 stickiness highlights the importance of supporting regional seed
 policies, for example state-specific protections for genetic
-contamination, to help meet the customized needs of an area (Organic
-Seed Alliance 2022). Though
+contamination, to help meet the customized needs of an area (\protect\hyperlink{ref-Organic_Seed_Alliance_2022}{Alliance 2022}). Though
 at the same time, policy should leverage the bridging role of
 higher-level national actors as connectors of limiting resources like
 funding and providing pre-competitive resources like genetic material.
@@ -2204,15 +2213,14 @@ funding and providing pre-competitive resources like genetic material.
 \section{1. Introduction}\label{introduction-3}}
 
 How to build a successful innovation system has long been a topic in the
-sustainability transitions literature (Hermans, Klerkx, and Roep 2015;
-Klein Woolthuis, Lankhuizen, and Gilsing
-2005). Much attention has
-been paid to the functions that support innovation systems, such as
-knowledge creation, legitimacy building, capital support, and market
-formation, which are the processes fueling the development and diffusion
-of an innovation (Bergek et al.~2008). Complementary to these functions
-are structural features, which define the architecture that helps these
-functions develop, accrue, and/or dissolve (Weiczorek et al 2012).
+sustainability transitions literature (\protect\hyperlink{ref-Hermans_Klerkx_Roep_2015}{Hermans, Klerkx, and Roep 2015}; \protect\hyperlink{ref-Klein_Woolthuis_Lankhuizen_Gilsing_2005}{Klein Woolthuis, Lankhuizen, and Gilsing 2005}).
+Much attention has been paid to the functions that support innovation
+systems, such as knowledge creation, legitimacy building, capital
+support, and market formation, which are the processes fueling the
+development and diffusion of an innovation (Bergek et al.~2008).
+Complementary to these functions are structural features, which define
+the architecture that helps these functions develop, accrue, and/or
+dissolve (Weiczorek et al 2012).
 
 While it is broadly agreed that there is no single recipe for how
 innovation systems are built (Bergek et al.~2008), recent attention has
@@ -3956,6 +3964,222 @@ The source files for this thesis have been compiled at \url{https://github.com/l
 
 \noindent
 
+\hypertarget{refs}{}
+\begin{CSLReferences}{1}{0}
+\leavevmode\vadjust pre{\hypertarget{ref-Organic_Seed_Alliance_2022}{}}%
+Alliance, Organic Seed. 2022. \emph{2023 Policy Platform for Seed}. Organic Seed Alliance.
+
+\leavevmode\vadjust pre{\hypertarget{ref-Almekinders_Louwaars_2002}{}}%
+Almekinders, Conny J. M., and Niels P Louwaars. 2002. {``\href{https://doi.org/10.1300/J153v04n01_02}{The Importance of the Farmers' Seed Systems in a Functional National Seed Sector}.''} \emph{Seed Policy} 4: 1--2.
+
+\leavevmode\vadjust pre{\hypertarget{ref-van_Alphen_Noothout_Hekkert_Turkenburg_2010}{}}%
+Alphen, Klaas van, Paul M. Noothout, Marko P. Hekkert, and Wim C. Turkenburg. 2010. {``\href{https://doi.org/10.1016/j.rser.2009.10.028}{Evaluating the Development of Carbon Capture and Storage Technologies in the United States}.''} \emph{Renewable and Sustainable Energy Reviews} 14(3): 971--86.
+
+\leavevmode\vadjust pre{\hypertarget{ref-Belderbos_Cassiman_Faems_Leten_Van_Looy_2014}{}}%
+Belderbos, René et al. 2014. {``\href{https://doi.org/10.1016/j.respol.2013.08.013}{Co-Ownership of Intellectual Property: Exploring the Value-Appropriation and Value-Creation Implications of Co-Patenting with Different Partners}.''} \emph{Research Policy} 43(5): 841--52.
+
+\leavevmode\vadjust pre{\hypertarget{ref-Berardo_Scholz_2010}{}}%
+Berardo, Ramiro, and John T Scholz. 2010. {``\href{https://doi.org/10.1111/j.1540-5907.2010.00451.x}{Self-Organizing Policy Networks\,: Risk , Partner Selection , and Cooperation in Estuaries Ramiro Berardo University of Arizona}.''} \emph{American Journal of Political Science} 54(3): 632--49.
+
+\leavevmode\vadjust pre{\hypertarget{ref-Bergek_Jacobsson_Carlsson_Lindmark_Rickne_2008}{}}%
+Bergek, Anna et al. 2008. {``\href{https://doi.org/10.1016/j.respol.2007.12.003}{Analyzing the Functional Dynamics of Technological Innovation Systems: A Scheme of Analysis}.''} \emph{Research Policy} 37(3): 407--29.
+
+\leavevmode\vadjust pre{\hypertarget{ref-Bergek_Hekkert_Jacobsson_Markard_Sanduxe9n_Truffer_2015}{}}%
+Bergek, Anna et al. 2015. {``\href{https://doi.org/10.1016/j.eist.2015.07.003}{Technological Innovation Systems in Contexts: Conceptualizing Contextual Structures and Interaction Dynamics}.''} \emph{Environmental Innovation and Societal Transitions} 16: 51--64.
+
+\leavevmode\vadjust pre{\hypertarget{ref-Bialik_Walker_2019}{}}%
+Bialik, Kristen, and Kristi Walker. 2019. {``Organic Farming Is on the Rise in the u.s.''} \emph{Pew Research Center}. \url{https://www.pewresearch.org/short-reads/2019/01/10/organic-farming-is-on-the-rise-in-the-u-s/}.
+
+\leavevmode\vadjust pre{\hypertarget{ref-Binz_Coenen_Murphy_Truffer_2020}{}}%
+Binz, Christian, Lars Coenen, James T. Murphy, and Bernhard Truffer. 2020. {``\href{https://doi.org/10.1016/j.eist.2019.11.002}{Geographies of Transition---from Topical Concerns to Theoretical Engagement: A Comment on the Transitions Research Agenda}.''} \emph{Environmental Innovation and Societal Transitions} 34: 1--3.
+
+\leavevmode\vadjust pre{\hypertarget{ref-Binz_Truffer_2017}{}}%
+Binz, Christian, and Bernhard Truffer. 2017. {``\href{https://doi.org/10.1016/j.respol.2017.05.012}{Global Innovation Systems---a Conceptual Framework for Innovation Dynamics in Transnational Contexts}.''} \emph{Research Policy} 46(7): 1284--98.
+
+\leavevmode\vadjust pre{\hypertarget{ref-Binz_Truffer_2020}{}}%
+---------. 2020. {``The Governance of Global Innovation Systems: Putting Knowledge in Context.''} In \emph{Knowledge for Governance}, Knowledge and space,.
+
+\leavevmode\vadjust pre{\hypertarget{ref-Binz_Truffer_Coenen_2014}{}}%
+Binz, Christian, Bernhard Truffer, and Lars Coenen. 2014. {``\href{https://doi.org/10.1016/j.respol.2013.07.002}{Why Space Matters in Technological Innovation Systems---Mapping Global Knowledge Dynamics of Membrane Bioreactor Technology}.''} \emph{Research Policy} 43(1): 138--55.
+
+\leavevmode\vadjust pre{\hypertarget{ref-Binz_Truffer_Coenen_2016}{}}%
+---------. 2016. {``\href{https://doi.org/10.1080/00130095.2015.1103177}{Path Creation as a Process of Resource Alignment and Anchoring: Industry Formation for on-Site Water Recycling in Beijing}.''} \emph{Economic Geography} 92(2): 172--200.
+
+\leavevmode\vadjust pre{\hypertarget{ref-Buttel_Jr_Larson_1990}{}}%
+Buttel, Frederick H., Gilbert W. Gillespie Jr, and Olaf F. Larson. 1990. \emph{The Sociology of Agriculture:} y First printing edition. New York: Praeger.
+
+\leavevmode\vadjust pre{\hypertarget{ref-Carlsson_Jacobsson_Holmuxe9n_Rickne_2002}{}}%
+Carlsson, Bo, Staffan Jacobsson, Magnus Holmén, and Annika Rickne. 2002. {``\href{https://doi.org/10.1016/S0048-7333(01)00138-X}{Innovation Systems: Analytical and Methodological Issues}.''} \emph{Research Policy} 31(2): 233--45.
+
+\leavevmode\vadjust pre{\hypertarget{ref-Coenen_Benneworth_Truffer_2012}{}}%
+Coenen, Lars, Paul Benneworth, and Bernhard Truffer. 2012. {``\href{https://doi.org/10.1016/j.respol.2012.02.014}{Toward a Spatial Perspective on Sustainability Transitions}.''} \emph{Research Policy} 41.
+
+\leavevmode\vadjust pre{\hypertarget{ref-Colley_2022}{}}%
+Colley, Micaela Ruth. 2022. {``Critical Experiences in Participatory Approaches to Build up Organic Plant Breeding and Seed Systems.''} PhD thesis. Wageningen University. \url{https://research.wur.nl/en/publications/09218969-dc06-4fe9-91af-db058becaa3b}.
+
+\leavevmode\vadjust pre{\hypertarget{ref-Daloux11flu_Nassauer_Riolo_Scavia_2014}{}}%
+Daloğlu, Irem, Joan Iverson Nassauer, Rick L. Riolo, and Donald Scavia. 2014. {``\href{https://doi.org/10.1016/j.agsy.2014.05.007}{Development of a Farmer Typology of Agricultural Conservation Behavior in the American Corn Belt}.''} \emph{Agricultural Systems} 129: 93--102.
+
+\leavevmode\vadjust pre{\hypertarget{ref-Dawson_Riviuxe8re_Berthellot_Mercier_Kochko_Galic_Pin_Serpolay_Thomas_Giuliano_et_al._2011}{}}%
+Dawson, Julie C. et al. 2011. {``\href{https://doi.org/10.3390/su3081206}{Collaborative Plant Breeding for Organic Agricultural Systems in Developed Countries}.''} \emph{Sustainability} 3(8): 1206--23.
+
+\leavevmode\vadjust pre{\hypertarget{ref-Dillman_Smyth_Christian_2014}{}}%
+Dillman, Don A., Jolene D. Smyth, and Leah Melani Christian. 2014. \emph{Internet, Phone, Mail, and Mixed-Mode Surveys: The Tailored Design Method}. John Wiley \& Sons.
+
+\leavevmode\vadjust pre{\hypertarget{ref-Duncan_Pascucci_2017}{}}%
+Duncan, Jessica, and Stefano Pascucci. 2017. {``\href{https://doi.org/10.1111/soru.12167}{Mapping the Organisational Forms of Networks of Alternative Food Networks: Implications for Transition}.''} \emph{Sociologia Ruralis} 57(3): 316--39.
+
+\leavevmode\vadjust pre{\hypertarget{ref-Feder_Umali_1993}{}}%
+Feder, Gershon, and Dina L. Umali. 1993. {``\href{https://doi.org/10.1016/0040-1625(93)90053-A}{The Adoption of Agricultural Innovations: A Review}.''} \emph{Technological Forecasting and Social Change} 43(3): 215--39.
+
+\leavevmode\vadjust pre{\hypertarget{ref-Freeman_1995}{}}%
+Freeman, Chris. 1995. {``The "National System of Innovation" in Historical Perspective.''} \emph{Cambridge Journal of Economics} 19(1): 5--24.
+
+\leavevmode\vadjust pre{\hypertarget{ref-Gaituxe1n-Cremaschi_Klerkx_Duncan_Trienekens_Huenchuleo_Dogliotti_Contesse_Rossing_2018}{}}%
+Gaitán-Cremaschi, Daniel et al. 2018. {``\href{https://doi.org/10.1007/s13593-018-0550-2}{Characterizing Diversity of Food Systems in View of Sustainability Transitions. A Review}.''} \emph{Agronomy for Sustainable Development} 39(1): 1.
+
+\leavevmode\vadjust pre{\hypertarget{ref-Gertler_2003}{}}%
+Gertler, Meric S. 2003. {``Tacit Knowledge and the Economic Geography of Context, or the Undefinable Tacitness of Being (There).''} \emph{Journal of Economic Geography} 3(1): 75--99.
+
+\leavevmode\vadjust pre{\hypertarget{ref-Giurca_Metz_2018}{}}%
+Giurca, Alexandru, and Thomas Metz. 2018. {``\href{https://doi.org/10.1016/j.eist.2017.09.001}{A Social Network Analysis of Germany's Wood-Based Bioeconomy: Social Capital and Shared Beliefs}.''} \emph{Environmental Innovation and Societal Transitions} 26: 1--14.
+
+\leavevmode\vadjust pre{\hypertarget{ref-Handcock_Hunter_Butts_Goodreau_Krivitsky_Bender-deMoll_Morris_2019}{}}%
+Handcock, Mark S. et al. 2019. {``Statnet.''}
+
+\leavevmode\vadjust pre{\hypertarget{ref-Heiberg_Binz_Truffer_2020}{}}%
+Heiberg, Jonas, Christian Binz, and Bernhard Truffer. 2020. {``\href{https://doi.org/10.1080/00130095.2020.1842189}{The Geography of Technology Legitimation: How Multiscalar Institutional Dynamics Matter for Path Creation in Emerging Industries}.''} \emph{Economic Geography} 96(5): 470--98.
+
+\leavevmode\vadjust pre{\hypertarget{ref-Heiberg_Truffer_Binz_2022}{}}%
+Heiberg, Jonas, Bernhard Truffer, and Christian Binz. 2022. {``\href{https://doi.org/10.1016/j.respol.2021.104363}{Assessing Transitions Through Socio-Technical Configuration Analysis -- a Methodological Framework and a Case Study in the Water Sector}.''} \emph{Research Policy} 51(1): 104363.
+
+\leavevmode\vadjust pre{\hypertarget{ref-Hekkert_Suurs_Negro_Kuhlmann_Smits_2007}{}}%
+Hekkert, M. P. et al. 2007. {``\href{https://doi.org/10.1016/j.techfore.2006.03.002}{Functions of Innovation Systems: A New Approach for Analysing Technological Change}.''} \emph{Technological Forecasting and Social Change} 74(4): 413--32.
+
+\leavevmode\vadjust pre{\hypertarget{ref-Henry_Lubell_McCoy_2012}{}}%
+Henry, Adam Douglas, Mark Lubell, and Michael McCoy. 2012. {``Survey‐based Measurement of Public Management and Policy Networks.''} \emph{Journal of Policy Analysis and Management} 31(2): 432--52.
+
+\leavevmode\vadjust pre{\hypertarget{ref-Hermans_Sartas_Van_Schagen_Van_Asten_Schut_2017}{}}%
+Hermans, Frans et al. 2017. {``Social Network Analysis of Multi-Stakeholder Platforms in Agricultural Research for Development: Opportunities and Constraints for Innovation and Scaling.''} \emph{PLoS One} 12(2). \url{http://www.cgiar.org/about-us/governing-2010-}.
+
+\leavevmode\vadjust pre{\hypertarget{ref-Hermans_Klerkx_Roep_2015}{}}%
+Hermans, Frans, Laurens Klerkx, and Dirk Roep. 2015. {``\href{https://doi.org/10.1080/1389224X.2014.991113}{Structural Conditions for Collaboration and Learning in Innovation Networks: Using an Innovation System Performance Lens to Analyse Agricultural Knowledge Systems}.''} \emph{The Journal of Agricultural Education and Extension} 21(1): 35--54.
+
+\leavevmode\vadjust pre{\hypertarget{ref-Hermans_Stuiver_Beers_Kok_2013}{}}%
+Hermans, Frans, Marian Stuiver, P J Beers, and Kasper Kok. 2013. {``\href{https://doi.org/10.1016/j.agsy.2012.09.006}{The Distribution of Roles and Functions for Upscaling and Outscaling Innovations in Agricultural Innovation Systems}.''} \emph{Agricultural Systems} 115: 117--28.
+
+\leavevmode\vadjust pre{\hypertarget{ref-Hubbard_Zystro_Wood_2022}{}}%
+Hubbard, Kiki, Jared Zystro, and Liza Wood. 2022. \emph{State of Organic Seed}. Port Townsend, WA: Organic Seed Alliance.
+
+\leavevmode\vadjust pre{\hypertarget{ref-Jacobsson_Johnson_2000}{}}%
+Jacobsson, Staffan, and Anna Johnson. 2000. {``\href{https://doi.org/10.1016/S0301-4215(00)00041-0}{The Diffusion of Renewable Energy Technology: An Analytical Framework and Key Issues for Research}.''} \emph{Energy Policy} 28(9): 625--40.
+
+\leavevmode\vadjust pre{\hypertarget{ref-Jeannerat_Kebir_2016}{}}%
+Jeannerat, Hugues, and Leïla Kebir. 2016. {``\href{https://doi.org/10.1080/00343404.2014.986718}{Knowledge, Resources and Markets: What Economic System of Valuation?}''} \emph{Regional Studies} 50(2): 274--88.
+
+\leavevmode\vadjust pre{\hypertarget{ref-Jensen_Johnson_Lorenz_Lundvall_2007}{}}%
+Jensen, Morten Berg, Björn Johnson, Edward Lorenz, and Bengt Åke Lundvall. 2007. {``\href{https://doi.org/10.1016/j.respol.2007.01.006}{Forms of Knowledge and Modes of Innovation}.''} \emph{Research Policy} 36(5): 680--93.
+
+\leavevmode\vadjust pre{\hypertarget{ref-Kern_2015}{}}%
+Kern, Florian. 2015. {``\href{https://doi.org/10.1016/j.eist.2015.07.001}{Engaging with the Politics, Agency and Structures in the Technological Innovation Systems Approach}.''} \emph{Environmental Innovation and Societal Transitions} 16: 67--69.
+
+\leavevmode\vadjust pre{\hypertarget{ref-Klein_Woolthuis_Lankhuizen_Gilsing_2005}{}}%
+Klein Woolthuis, Rosalinde, Maureen Lankhuizen, and Victor Gilsing. 2005. {``\href{https://doi.org/10.1016/j.technovation.2003.11.002}{A System Failure Framework for Innovation Policy Design}.''} \emph{Technovation} 25(6): 609--19.
+
+\leavevmode\vadjust pre{\hypertarget{ref-Kuxf6hler_Geels_Kern_Markard_Onsongo_Wieczorek_Alkemade_Avelino_Bergek_Boons_et_al._2019}{}}%
+Köhler, Jonathan et al. 2019. {``\href{https://doi.org/10.1016/J.EIST.2019.01.004}{An Agenda for Sustainability Transitions Research: State of the Art and Future Directions}.''} \emph{Environmental Innovation and Societal Transitions} 31: 1--32.
+
+\leavevmode\vadjust pre{\hypertarget{ref-Kreft_Angst_Huber_Finger_2023}{}}%
+Kreft, Cordelia, Mario Angst, Robert Huber, and Robert Finger. 2023. {``\href{https://doi.org/10.1007/s10584-023-03484-6}{Farmers' Social Networks and Regional Spillover Effects in Agricultural Climate Change Mitigation}.''} \emph{Climatic Change} 176(2): 8.
+
+\leavevmode\vadjust pre{\hypertarget{ref-Lamers_Schut_Klerkx_Van_Asten_2017}{}}%
+Lamers, Dieuwke, Marc Schut, Laurens Klerkx, and Piet Van Asten. 2017. {``Compositional Dynamics of Multilevel Innovation Platforms in Agricultural Research for Development.''} \emph{Science and Public Policy} 44(6). \url{https://academic.oup.com/spp/article/44/6/739/3103023}.
+
+\leavevmode\vadjust pre{\hypertarget{ref-Lammerts_van_Bueren_Struik_van_Eekeren_Nuijten_2018}{}}%
+Lammerts van Bueren, Edith T., Paul C. Struik, Nick van Eekeren, and Edwin Nuijten. 2018. {``\href{https://doi.org/10.1007/s13593-018-0522-6}{Towards Resilience Through Systems-Based Plant Breeding. A Review}.''} \emph{Agronomy for Sustainable Development} 38(5).
+
+\leavevmode\vadjust pre{\hypertarget{ref-Levy_Lubell_2018}{}}%
+Levy, Michael A., and Mark N. Lubell. 2018. {``\href{https://doi.org/10.1007/s10113-017-1258-6}{Innovation, Cooperation, and the Structure of Three Regional Sustainable Agriculture Networks in California}.''} \emph{Regional Environmental Change} 18(4): 1235--46.
+
+\leavevmode\vadjust pre{\hypertarget{ref-Lubell_Niles_Hoffman_2014}{}}%
+Lubell, Mark, Meredith Niles, and Matthew Hoffman. 2014. {``\href{https://doi.org/10.1080/08941920.2014.933496}{Extension 3.0: Managing Agricultural Knowledge Systems in the Network Age}.''} \emph{Society and Natural Resources} 27: 1089--1103.
+
+\leavevmode\vadjust pre{\hypertarget{ref-Lubell_Scholz_Berardo_Robins_2012}{}}%
+Lubell, Mark, John Scholz, Ramiro Berardo, and Garry Robins. 2012. {``\href{https://doi.org/10.1111/j.1541-0072.2012.00457.x}{Testing Policy Theory with Statistical Models of Networks}.''} \emph{Policy Studies Journal} 40(3): 351--74.
+
+\leavevmode\vadjust pre{\hypertarget{ref-Lusher_Koskinen_Robins_2012}{}}%
+Lusher, Dean, Johan Koskinen, and Garry Robins. 2012. \emph{Exponential Random Graph Models for Social Networks}. Cambridge University Press.
+
+\leavevmode\vadjust pre{\hypertarget{ref-MacKinnon_Afewerki_Karlsen_2022}{}}%
+MacKinnon, Danny, Samson Afewerki, and Asbjørn Karlsen. 2022. {``\href{https://doi.org/10.1016/j.geoforum.2022.07.008}{Technology Legitimation and Strategic Coupling: A Cross-National Study of Floating Wind Power in Norway and Scotland}.''} \emph{Geoforum} 135: 1--11.
+
+\leavevmode\vadjust pre{\hypertarget{ref-Markard_Hekkert_Jacobsson_2015}{}}%
+Markard, Jochen, Marko Hekkert, and Staffan Jacobsson. 2015. {``\href{https://doi.org/10.1016/j.eist.2015.07.006}{The Technological Innovation Systems Framework: Response to Six Criticisms}.''} \emph{Environmental Innovation and Societal Transitions} 16: 76--86.
+
+\leavevmode\vadjust pre{\hypertarget{ref-Musiolik_Markard_2011}{}}%
+Musiolik, Jörg, and Jochen Markard. 2011. {``\href{https://doi.org/10.1016/j.enpol.2010.12.052}{Creating and Shaping Innovation Systems: Formal Networks in the Innovation System for Stationary Fuel Cells in Germany}.''} \emph{Energy Policy} 39(4): 1909--22.
+
+\leavevmode\vadjust pre{\hypertarget{ref-Musiolik_Markard_Hekkert_2012}{}}%
+Musiolik, Jörg, Jochen Markard, and Marko Hekkert. 2012. {``\href{https://doi.org/10.1016/J.TECHFORE.2012.01.003}{Networks and Network Resources in Technological Innovation Systems: Towards a Conceptual Framework for System Building}.''} \emph{Technological Forecasting and Social Change} 79(6): 1032--48.
+
+\leavevmode\vadjust pre{\hypertarget{ref-Renaud_Bueren_Jiggins_2016}{}}%
+Renaud, Erica, E. T. Bueren, and Janice Jiggins. 2016. {``\href{https://doi.org/10.1504/IJARGE.2016.078311}{The Meta-Governance of Organic Seed Regulation in the USA, European Union and Mexico}.''} \emph{International Journal of Agricultural Resources, Governance and Ecology} 12: 262.
+
+\leavevmode\vadjust pre{\hypertarget{ref-Robins_Lewis_Wang_2012}{}}%
+Robins, Garry, Jenny M. Lewis, and Peng Wang. 2012. {``\href{https://doi.org/10.1111/j.1541-0072.2012.00458.x}{Statistical Network Analysis for Analyzing Policy Networks}.''} \emph{Policy Studies Journal} 40(3): 375--401.
+
+\leavevmode\vadjust pre{\hypertarget{ref-Rohe_2020}{}}%
+Rohe, Sebastian. 2020. {``\href{https://doi.org/10.1016/j.eist.2020.02.002}{The Regional Facet of a Global Innovation System: Exploring the Spatiality of Resource Formation in the Value Chain for Onshore Wind Energy}.''} \emph{Environmental Innovation and Societal Transitions} 36: 331--44.
+
+\leavevmode\vadjust pre{\hypertarget{ref-Rohe_Oltmer_Wolter_Gmeiner_Tschersich_2022}{}}%
+Rohe, Sebastian et al. 2022. {``\href{https://doi.org/10.1016/j.eist.2022.09.004}{Forever Niche: Why Do Organically Bred Vegetable Varieties Not Diffuse?}''} \emph{Environmental Innovation and Societal Transitions} 45: 83--100.
+
+\leavevmode\vadjust pre{\hypertarget{ref-Rohe_Chlebna_2021}{}}%
+Rohe, Sebastian, and Camilla Chlebna. 2021. {``\href{https://doi.org/10.1016/j.enpol.2021.112193}{A Spatial Perspective on the Legitimacy of a Technological Innovation System: Regional Differences in Onshore Wind Energy}.''} \emph{Energy Policy} 151: 112193.
+
+\leavevmode\vadjust pre{\hypertarget{ref-Rohe_Chlebna_2022}{}}%
+---------. 2022. {``\href{https://doi.org/10.1016/j.techfore.2022.121916}{The Evolving Role of Networking Organizations in Advanced Sustainability Transitions}.''} \emph{Technological Forecasting and Social Change} 183: 121916.
+
+\leavevmode\vadjust pre{\hypertarget{ref-Rohe_Mattes_2022}{}}%
+Rohe, Sebastian, and Jannika Mattes. 2022. {``\href{https://doi.org/10.1016/j.geoforum.2022.01.007}{What about the Regional Level? Regional Configurations of Technological Innovation Systems}.''} \emph{Geoforum} 129: 60--73.
+
+\leavevmode\vadjust pre{\hypertarget{ref-Scott_Thomas_2015}{}}%
+Scott, Tyler A, and Craig Thomas. 2015. {``\href{https://doi.org/10.1080/15309576.2015.1031008}{Do Collaborative Groups Enhance Interorganizational Networks?}''} \emph{Public Performance \& Management Review} 38(4): 654--83.
+
+\leavevmode\vadjust pre{\hypertarget{ref-Scott_Ulibarri_2019}{}}%
+Scott, Tyler A, and Nicola Ulibarri. 2019. {``\href{https://doi.org/10.1093/ppmgov/gvy011}{Taking Network Analysis Seriously: Methodological Improvements for Governance Network Scholarship}.''} \emph{Perspectives on Public Management and Governance}: 89--101.
+
+\leavevmode\vadjust pre{\hypertarget{ref-Sievers-Glotzbach_Tschersich_Gmeiner_Kliem_Ficiciyan_2020}{}}%
+Sievers-Glotzbach, Stefanie et al. 2020. {``\href{https://doi.org/10.5334/ijc.1043}{Diverse Seeds -- Shared Practices: Conceptualizing Seed Commons}.''} \emph{International Journal of the Commons} 14(11): 418--38.
+
+\leavevmode\vadjust pre{\hypertarget{ref-Stuart_Benveniste_Harris_2014}{}}%
+Stuart, D., E. Benveniste, and L. M. Harris. 2014. {``\href{https://doi.org/10.1016/j.landusepol.2014.03.009}{Evaluating the Use of an Environmental Assurance Program to Address Pollution from United States Cropland}.''} \emph{Land Use Policy} 39: 34--43.
+
+\leavevmode\vadjust pre{\hypertarget{ref-Sumner_2014}{}}%
+Sumner, Daniel A. 2014. {``\href{https://doi.org/10.1257/jep.28.1.147}{American Farms Keep Growing: Size, Productivity, and Policy}.''} \emph{Journal of Economic Perspectives} 28(1): 147--66.
+
+\leavevmode\vadjust pre{\hypertarget{ref-Tsouri_Hanson_Normann_2021}{}}%
+Tsouri, Maria, Jens Hanson, and Håkon Endresen Normann. 2021. {``\href{https://doi.org/10.1016/j.respol.2021.104227}{Does Participation in Knowledge Networks Facilitate Market Access in Global Innovation Systems? The Case of Offshore Wind}.''} \emph{Research Policy} 50(5): 104227.
+
+\leavevmode\vadjust pre{\hypertarget{ref-Vantaggiato_Lubell_Hummel_Chow_Tcheukam_Siwe_2023}{}}%
+Vantaggiato, Francesca et al. 2023. {``\href{https://doi.org/10.1016/j.gloenvcha.2023.102654}{Creating Adaptive Social-Ecological Fit: The Role of Regional Actors in the Governance of Sea-Level Rise Adaptation in San Francisco Bay}.''} \emph{Global Environmental Change} 80: 102654.
+
+\leavevmode\vadjust pre{\hypertarget{ref-Vantaggiato_Lubell_2022}{}}%
+Vantaggiato, Francesca Pia, and Mark Lubell. 2022. {``Functional Differentiation in Governance Networks for Sea Level Rise Adaptation in the San Francisco Bay Area.''} \emph{Social Networks}. \url{https://www.sciencedirect.com/science/article/pii/S0378873322000326}.
+
+\leavevmode\vadjust pre{\hypertarget{ref-Wasserman_Faust_1994}{}}%
+Wasserman, Stanley, and Katherine Faust. 1994. \emph{Social Network Analysis: Methods and Applications (Structural Analysis in the Social Sciences)}. Cambridge University Press.
+
+\leavevmode\vadjust pre{\hypertarget{ref-Wieczorek_Hekkert_Coenen_Harmsen_2015}{}}%
+Wieczorek, Anna J., Marko P. Hekkert, Lars Coenen, and Robert Harmsen. 2015. {``\href{https://doi.org/10.1016/j.eist.2014.09.001}{Broadening the National Focus in Technological Innovation System Analysis: The Case of Offshore Wind}.''} \emph{Environmental Innovation and Societal Transitions} 14: 128--48.
+
+\leavevmode\vadjust pre{\hypertarget{ref-Wieczorek_Hekkert_2012}{}}%
+Wieczorek, Anna J, and Marko P Hekkert. 2012. {``\href{https://doi.org/10.1093/scipol/scr008}{Systemic Instruments for Systemic Innovation Problems: A Framework for Policy Makers and Innovation Scholars}.''} \emph{Science and Public Policy} 39: 74--87.
+
+\leavevmode\vadjust pre{\hypertarget{ref-Youngberg_DeMuth_2013}{}}%
+Youngberg, Garth, and Suzanne P. DeMuth. 2013. {``\href{https://doi.org/10.1017/S1742170513000173}{Organic Agriculture in the United States: A 30-Year Retrospective}.''} \emph{Renewable Agriculture and Food Systems} 28(4): 294--328.
+
+\end{CSLReferences}
 \end{ucmainmatter}
 \end{document}
 
