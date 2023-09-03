@@ -1,6 +1,6 @@
 `r if(knitr:::is_latex_output()) '\\appendix'`
 
-`r if(!knitr:::is_latex_output()) '# (APPENDIX) Appendix {-}'` 
+`r if(!knitr:::is_latex_output()) '# (APPENDIX) {-}'` 
 
 
 ```{r, child = '~/Documents/Davis/R-Projects/organicseed_adoption/ch1-manuscript/03_appendix_manual.Rmd'}

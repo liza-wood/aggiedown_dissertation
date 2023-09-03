@@ -263,6 +263,8 @@ manual_bib_file <- function(){
   write.table(bib, 'bib/thesis.txt', row.names = F, col.names = F, quote = F)
 }
 
-manual_bib_file()
+#manual_bib_file()
 auto_bib_file()
-test <- bib2df::bib2df('bib/thesis.bib')
+
+# Correct footnotes?
+## Maybe just do it manually???
