@@ -1,6 +1,6 @@
 library(stringr)
 
-prep_papers <- function(GDOC_URL, GDOC_PATH){
+prep_papers <- function(GDOC_URL, GDOC_PATH, intro = F){
   # download chapter from drive
   googledrive::drive_download(GDOC_URL,
                               path = paste0(GDOC_PATH, '01_drive_manuscript.docx'),
@@ -13,13 +13,17 @@ prep_papers <- function(GDOC_URL, GDOC_PATH){
   # Here I can manipulate the document
   txt <- readtext::readtext(paste0(GDOC_PATH, '01_drive_manuscript.txt'))[,2]
   # Start at header
-  start <- str_locate(txt, '#\\s\\w')
-  txt <- stringr::str_sub(txt, start[1], nchar(txt))
+  if(intro == T){
+    txt <- txt
+  } else {
+    start <- str_locate(txt, '#\\s\\w')
+    txt <- stringr::str_sub(txt, start[1], nchar(txt))
+  }
   
   # Take references -- put into anystyle, but don't remove footnotes (after refs)
   ref_start <- str_locate(txt, '#\\sReferences')
   ref_end <- str_locate_all(txt, '\\[\\^1\\]')
-  if(length(ref_end) == 0){
+  if(lengths(ref_end) == 0){
     ref_end = nchar(txt)
   } else {
     ref_end = ref_end[[1]][lengths(ref_end)/2]
@@ -71,12 +75,32 @@ prep_papers <- function(GDOC_URL, GDOC_PATH){
     # Remove the references from the text but keep the footnotes
     txt <- paste(str_remove(str_sub(txt, 1, ref_start[1]), "#?#$"), 
                  str_sub(txt, ref_end[1], nchar(txt)))
+    # If there is duplicate thing, like NOSB 2004, 2006
+    #dupl <- '\\[(\\w|\\d|_|\\s|\\n)+_\\d{4},(\\s|\\n)\\d{4}\\]'
+    #dupl_loc <- data.frame(str_locate_all(txt, dupl))
+    #str_sub(txt, dupl_loc[1,1], dupl_loc[1,2])
+    
+  #  if(nrow(dupl_loc) > 0){
+  #    for(i in 1:nrow(dupl_loc)){
+  #      dupl_loc <- data.frame(str_locate_all(txt, dupl))
+  #      sample <- str_sub(txt, dupl_loc[i,1]+1, dupl_loc[i,2]-1)
+  #      years <- str_extract_all(sample, '\\d{4}')
+  #      years <- years[[1]]
+  #      author <- str_extract(sample, '(\\w|\\d|_|\\s|\\n)+(?=_\\d{4},)')
+  #      str_sub(txt, dupl_loc[i,1], dupl_loc[i,2]) <- paste(author,years[1],
+  #                                                          author, years[2],
+  #                                                          sep = '_')
+  #    }
+  #  }
     
     # Correct where linebreaks were in text
-    inlinecit <- '\\[(\\w|\\d|_|\\s|\\n)+_\\d{4}\\]'
+    inlinecit <- '\\[(\\w|\\d|_|\\s|\\n|\\-)+(al\\.\\\\{0,2})?_\\d{4}\\]'
     cit_loc <- data.frame(str_locate_all(txt, inlinecit))
+    
+    str_sub(txt, cit_loc[107,1], cit_loc[107,2])
     str_sub(txt, cit_loc[107,1], cit_loc[107,2])
     str_sub(txt, cit_loc[35,1], cit_loc[35,2])
+    str_sub(txt, cit_loc[29,1], cit_loc[29,2])
     str_sub(txt, cit_loc[60,1], cit_loc[60,2])
     str_sub(txt, cit_loc[67,1], cit_loc[67,2])
     str_sub(txt, cit_loc[1,1], cit_loc[1,2])
@@ -181,10 +205,13 @@ prep_papers <- function(GDOC_URL, GDOC_PATH){
   txt <- stringr::str_replace_all(txt, '\\\\`\\\\`\\\\`', '```')
   # Allow chaptermark
   cm <- str_locate(txt, 'chaptermark')
-  str_sub(txt, cm[1]-2, cm[2]) <- '\\chaptermark'
-  
+  if(!is.na(cm[1,1])){
+    str_sub(txt, cm[1]-2, cm[2]) <- '\\chaptermark'
+  }
+
   # And then make sure code within chunks doesn't have markup
   chunks <- data.frame(str_locate_all(txt, '```'))
+  if(nrow(chunks) != 0){
   for(i in seq(1,nrow(chunks), 2)){
     if(i == 1){
       rpl <- str_remove_all(str_sub(txt, chunks$end[i], chunks$start[i+1]), '\\\\')
@@ -196,6 +223,7 @@ prep_papers <- function(GDOC_URL, GDOC_PATH){
       rpl <- str_replace_all(rpl, '(?<!\\})\\n(?!`)', ' ')
       str_sub(txt, newchunks$end[i], newchunks$start[i+1]) <- rpl
     }
+  }
   }
   
   # Remove {.underline}
@@ -228,6 +256,9 @@ prep_papers <- function(GDOC_URL, GDOC_PATH){
   
 }
 
+introurl <- 'https://docs.google.com/document/d/1rhGeXrAtk8hdtB1uymg1WwaD_P3Xv3oz_lm1sl4Qnao/edit#'
+intropath <- '~/Documents/Davis/R-Projects/aggiedown_dissertation/intro/'
+
 ch1url <- 'https://docs.google.com/document/d/1T9K308unavSzrx7A4ZsXRTScazhfeAVHGT-rtawP1x4/edit'
 ch1path <- '~/Documents/Davis/R-Projects/organicseed_adoption/ch1-manuscript/'
 
@@ -237,18 +268,20 @@ ch2path <- '~/Documents/Davis/R-Projects/osisn_spatial/ch2-manuscript/'
 ch3url <- 'https://docs.google.com/document/d/1OWRFWWUNgEmn2VDEcj6bS8uc_lL1VnteS5jK-_YyhII/edit'
 ch3path <- '~/Documents/Davis/R-Projects/osisn_processes/ch3-manuscript/'
 
-
+prep_papers(introurl, intropath, intro = T)
 prep_papers(ch1url, ch1path)
 prep_papers(ch2url, ch2path)
 prep_papers(ch3url, ch3path)
 
+
 # If the setting in Google docs is bibtext, I can make my bibfile automatically by combining each bib
 auto_bib_file <- function(){
+  bib0 <- readtext::readtext(paste0(intropath,'04_refs.bib'))$text
   bib1 <- readtext::readtext(paste0(ch1path,'04_refs.bib'))$text
   bib2 <- readtext::readtext(paste0(ch2path,'04_refs.bib'))$text
   bib3 <- readtext::readtext(paste0(ch3path,'04_refs.bib'))$text
   
-  bib <- paste(bib1, bib2, bib3, collapse = "\n")
+  bib <- paste(bib0, bib1, bib2, bib3, collapse = "\n")
   
   write.table(bib, 'bib/thesis.bib', row.names = F, col.names = F, quote = F)
 }

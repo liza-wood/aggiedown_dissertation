@@ -1,0 +1,92 @@
+The challenges facing agricultural systems -- biodiversity loss, climate
+change, corporate consolidation, and loss of food sovereignty, to name a
+few -- demand transitions to more environmentally and socially
+sustainable agricultural systems (Hebinck et al.
+2021). Supporting
+sustainability transitions, however, is no easy task. The decision to
+adopt a new technology or change behavior is made at the individual
+level, which is influenced by factors like attitudes and available
+resources (Buttel, Jr, and Larson 1990; Rogers
+2003). These individual
+factors, however, are shaped by the broader innovation system in which
+an individual is nested (Klerkx, van Mierlo, and Leeuwis
+2012). Innovation systems
+(IS) are the interactions between actors and institutions that nurture
+and diffuse new technologies or practices based on several
+interdependent processes, such as knowledge creation and policy guidance
+(Bergek et al. 2008).
+Which processes to foster, at what scale, and to what end, are core
+questions in the niche management and innovation system literature
+(Binz and Truffer 2017; Musiolik et al. 2020; Smith and Raven 2012;
+Suurs 2009); the answers
+help support the governance of successful transitions towards more
+sustainable forms of management (Jacobsson and Bergek
+2011).
+
+This dissertation addresses questions about sustainability transitions
+at both the individual and system level using the case of the organic
+seed system. Among the inputs necessary for supporting a sustainable
+agricultural system, seeds are one of the most foundational. While the
+dominant seed breeding approach in countries like the United States is
+based on high-input, low-diversity and highly centralized conventional
+agricultural practices (Lammerts van Bueren et al.
+2018), several niche
+alternatives have developed to support a more sustainable system. This
+work focuses on organic agriculture, in which seed production systems
+are typically low-input and high diversity with polycentric modes of
+management (Colley 2022; Rohe et al. 2022; Shelton and Tracy
+2015).
+
+The organic seed research community has inspired the work of this
+dissertation, particularly Organic Seed Alliance\'s *State of Organic
+Seed Reports* (Dillon and Hubbard 2011; Hubbard and Zystro 2016;
+Hubbard, Zystro, and Wood
+2022). Their research
+positions organic seed as part of a broader system; seed is about
+breeding and agronomy, of course, but also policy, funding, community
+building, and small business development. These reports mirror the
+innovation systems approach, where environmental challenges require
+systems-level assessments that connect and transcend disciplines.
+
+Using the case of organic seed, this dissertation includes three
+chapters. The focus of Chapter 1 is on the flexible policy setting in
+which organic growers are situated -- namely the organic seed loophole
+which allows organic growers to use conventional seed based on
+commercial availability. We ask whether the loophole helps reduce
+growers\' undue seed sourcing burden or enables them to free-ride. The
+results suggest that growers use the loophole differently depending on
+their motivations and operational profiles. These findings guide us in
+making several policy recommendations, and help open up a wider
+conversation about niche identity in sustainability transitions.
+
+Chapters 2 and 3 broaden the scope of study to take a systems-level
+focus on organic seed. Both of these papers draw on theories of
+innovation systems, combined with the policy network and social network
+literature, to quantify the organic seed innovation system as a network.
+Chapter 2 focuses on the spatial boundaries of the organic seed system,
+testing the conditions defined by the Global Innovation Systems
+framework for predicting spatial innovation system structure. We find...
+support for the framework, which proposes that innovation mode and
+production valuation are two key conditions predicting a network\'s
+spatial structure. The organic seed system is a \'spatially sticky\'
+innovation system, in that both the knowledge and market subsystems of
+the IS are regionally embedded. These results highlight the importance
+of... regional or state level policies to tailor to the needs of the
+seed system, while still relying on
+
+Chapter 3 looks at the social structures occurring in the organic seed
+network, and draws on resource-based theory to test the relationship
+between existing system resources and paired, cooperative efforts. We
+find...
+
+Both Chapters 2 and 3 make theoretical and methodological contributions
+to the field of sustainability transitions. I engage with IS and
+sustainability transitions theories that seek to do more than describe
+the system, but rather, understand the conditions that shape it. By
+using inferential network analyses, exponential random graph models, we
+broaden the toolkit for testing IS theories that are developing around
+network formation. These methods help directly test and validate two
+theories in the field, Global innovation Systems framework and the
+resource-based theory of strategic system building
+
+ )

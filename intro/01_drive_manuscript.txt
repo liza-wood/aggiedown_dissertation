@@ -1,0 +1,171 @@
+The challenges facing agricultural systems -- biodiversity loss, climate
+change, corporate consolidation, and loss of food sovereignty, to name a
+few -- demand transitions to more environmentally and socially
+sustainable agricultural systems [(Hebinck et al.
+2021)](https://www.zotero.org/google-docs/?rSRxF3). Supporting
+sustainability transitions, however, is no easy task. The decision to
+adopt a new technology or change behavior is made at the individual
+level, which is influenced by factors like attitudes and available
+resources [(Buttel, Jr, and Larson 1990; Rogers
+2003)](https://www.zotero.org/google-docs/?Y0Mte3). These individual
+factors, however, are shaped by the broader innovation system in which
+an individual is nested [(Klerkx, van Mierlo, and Leeuwis
+2012)](https://www.zotero.org/google-docs/?DvQAj1). Innovation systems
+(IS) are the interactions between actors and institutions that nurture
+and diffuse new technologies or practices based on several
+interdependent processes, such as knowledge creation and policy guidance
+[(Bergek et al. 2008)](https://www.zotero.org/google-docs/?sr9u3m).
+Which processes to foster, at what scale, and to what end, are core
+questions in the niche management and innovation system literature
+[(Binz and Truffer 2017; Musiolik et al. 2020; Smith and Raven 2012;
+Suurs 2009)](https://www.zotero.org/google-docs/?Y02tfR); the answers
+help support the governance of successful transitions towards more
+sustainable forms of management [(Jacobsson and Bergek
+2011)](https://www.zotero.org/google-docs/?pDfkR9).
+
+This dissertation addresses questions about sustainability transitions
+at both the individual and system level using the case of the organic
+seed system. Among the inputs necessary for supporting a sustainable
+agricultural system, seeds are one of the most foundational. While the
+dominant seed breeding approach in countries like the United States is
+based on high-input, low-diversity and highly centralized conventional
+agricultural practices [(Lammerts van Bueren et al.
+2018)](https://www.zotero.org/google-docs/?QxCtrS), several niche
+alternatives have developed to support a more sustainable system. This
+work focuses on organic agriculture, in which seed production systems
+are typically low-input and high diversity with polycentric modes of
+management [(Colley 2022; Rohe et al. 2022; Shelton and Tracy
+2015)](https://www.zotero.org/google-docs/?ZMVKpi).
+
+The organic seed research community has inspired the work of this
+dissertation, particularly Organic Seed Alliance\'s *State of Organic
+Seed Reports* [(Dillon and Hubbard 2011; Hubbard and Zystro 2016;
+Hubbard, Zystro, and Wood
+2022)](https://www.zotero.org/google-docs/?T9FO7R). Their research
+positions organic seed as part of a broader system; seed is about
+breeding and agronomy, of course, but also policy, funding, community
+building, and small business development. These reports mirror the
+innovation systems approach, where environmental challenges require
+systems-level assessments that connect and transcend disciplines.
+
+Using the case of organic seed, this dissertation includes three
+chapters. The focus of Chapter 1 is on the flexible policy setting in
+which organic growers are situated -- namely the organic seed loophole
+which allows organic growers to use conventional seed based on
+commercial availability. We ask whether the loophole helps reduce
+growers\' undue seed sourcing burden or enables them to free-ride. The
+results suggest that growers use the loophole differently depending on
+their motivations and operational profiles. These findings guide us in
+making several policy recommendations, and help open up a wider
+conversation about niche identity in sustainability transitions.
+
+Chapters 2 and 3 broaden the scope of study to take a systems-level
+focus on organic seed. Both of these papers draw on theories of
+innovation systems, combined with the policy network and social network
+literature, to quantify the organic seed innovation system as a network.
+Chapter 2 focuses on the spatial boundaries of the organic seed system,
+testing the conditions defined by the Global Innovation Systems
+framework for predicting spatial innovation system structure. We find...
+support for the framework, which proposes that innovation mode and
+production valuation are two key conditions predicting a network\'s
+spatial structure. The organic seed system is a \'spatially sticky\'
+innovation system, in that both the knowledge and market subsystems of
+the IS are regionally embedded. These results highlight the importance
+of... regional or state level policies to tailor to the needs of the
+seed system, while still relying on
+
+Chapter 3 looks at the social structures occurring in the organic seed
+network, and draws on resource-based theory to test the relationship
+between existing system resources and paired, cooperative efforts. We
+find...
+
+Both Chapters 2 and 3 make theoretical and methodological contributions
+to the field of sustainability transitions. I engage with IS and
+sustainability transitions theories that seek to do more than describe
+the system, but rather, understand the conditions that shape it. By
+using inferential network analyses, exponential random graph models, we
+broaden the toolkit for testing IS theories that are developing around
+network formation. These methods help directly test and validate two
+theories in the field, Global innovation Systems framework and the
+resource-based theory of strategic system building
+
+# References
+
+[Bergek, Anna et al. 2008. "Analyzing the Functional Dynamics of
+Technological Innovation Systems: A Scheme of Analysis." *Research
+Policy* 37(3): 407--29.](https://www.zotero.org/google-docs/?Bgr4Nu)
+
+[Binz, Christian, and Bernhard Truffer. 2017. "Global Innovation
+Systems---A Conceptual Framework for Innovation Dynamics in
+Transnational Contexts." *Research Policy* 46(7):
+1284--98.](https://www.zotero.org/google-docs/?Bgr4Nu)
+
+[Buttel, Frederick H., Gilbert W. Gillespie Jr, and Olaf F. Larson.
+1990. *The Sociology of Agriculture:* y First printing edition. New
+York: Praeger.](https://www.zotero.org/google-docs/?Bgr4Nu)
+
+[Colley, Micaela Ruth. 2022. "Critical Experiences in Participatory
+Approaches to Build up Organic Plant Breeding and Seed Systems."
+Wageningen University.
+https://research.wur.nl/en/publications/09218969-dc06-4fe9-91af-db058becaa3b
+(January 4, 2023).](https://www.zotero.org/google-docs/?Bgr4Nu)
+
+[Dillon, Matthew, and Kiki Hubbard. 2011. *State of Organic Seed, 2011*.
+Port Townsend, WA: Organic Seed
+Allaince.](https://www.zotero.org/google-docs/?Bgr4Nu)
+
+[Hebinck, Aniek et al. 2021. "Beyond Food for Thought -- Directing
+Sustainability Transitions Research to Address Fundamental Change in
+Agri-Food Systems." *Environmental Innovation and Societal Transitions*
+41: 81--85.](https://www.zotero.org/google-docs/?Bgr4Nu)
+
+[Hubbard, Kiki, and Jared Zystro. 2016. *State of Organic Seed 2016*.
+Organic Seed Alliance.
+http://seedalliance.org/index.php?mact=DocumentStore,cntnt01,download_form,0&cntnt01pid=7&cntnt01returnid=139.](https://www.zotero.org/google-docs/?Bgr4Nu)
+
+[Hubbard, Kiki, Jared Zystro, and Liza Wood. 2022. *State of Organic
+Seed*. Port Townsend, WA: Organic Seed
+Alliance.](https://www.zotero.org/google-docs/?Bgr4Nu)
+
+[Jacobsson, Staffan, and Anna Bergek. 2011. "Innovation System Analyses
+and Sustainability Transitions: Contributions and Suggestions for
+Research." *Environmental Innovation and Societal Transitions* 1(1):
+41--57.](https://www.zotero.org/google-docs/?Bgr4Nu)
+
+[Klerkx, Laureans, Barbara van Mierlo, and Cees Leeuwis. 2012.
+"Evolution of Systems Approaches to Agricultural Innovation: Concepts,
+Analysis and Interventions." In *Farming Systems Research into the 21st
+Century: The New Dynamic*, eds. Ika Darnhofer, David Gibbon, and Benoit
+Dedieu. , 457--83.](https://www.zotero.org/google-docs/?Bgr4Nu)
+
+[Lammerts van Bueren, Edith T., Paul C. Struik, Nick van Eekeren, and
+Edwin Nuijten. 2018. "Towards Resilience through Systems-Based Plant
+Breeding. A Review." *Agronomy for Sustainable Development*
+38(5).](https://www.zotero.org/google-docs/?Bgr4Nu)
+
+[Musiolik, Jörg, Jochen Markard, Marko Hekkert, and Bettina Furrer.
+2020. "Creating Innovation Systems: How Resource Constellations Affect
+the Strategies of System Builders." *Technological Forecasting and
+Social Change* 153: 119209.](https://www.zotero.org/google-docs/?Bgr4Nu)
+
+[Rogers, Everett M. 2003. *Diffusion of Innovations, 5th Edition*. 5th
+edition. New York: Free
+Press.](https://www.zotero.org/google-docs/?Bgr4Nu)
+
+[Rohe, Sebastian et al. 2022. "Forever Niche: Why Do Organically Bred
+Vegetable Varieties Not Diffuse?" *Environmental Innovation and Societal
+Transitions* 45: 83--100.](https://www.zotero.org/google-docs/?Bgr4Nu)
+
+[Shelton, Adrienne C., and William F. Tracy. 2015. "Recurrent Selection
+and Participatory Plant Breeding for Improvement of Two Organic
+Open-Pollinated Sweet Corn (Zea Mays L.) Populations." *Sustainability
+(Switzerland)* 7(5):
+5139--52.](https://www.zotero.org/google-docs/?Bgr4Nu)
+
+[Smith, Adrian, and Rob Raven. 2012. "What Is Protective Space?
+Reconsidering Niches in Transitions to Sustainability." *Research
+Policy* 41(6): 1025--36.](https://www.zotero.org/google-docs/?Bgr4Nu)
+
+[Suurs, R. A.A. 2009. "Motors of Sustainable Innovation." Utrecht
+University.
+https://dspace.library.uu.nl/handle/1874/33346.](https://www.zotero.org/google-docs/?Bgr4Nu)

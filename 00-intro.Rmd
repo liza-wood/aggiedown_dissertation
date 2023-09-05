@@ -2,4 +2,5 @@
 
 # Introduction {-}
 
-Short tying it all together
+```{r, child = '~/Documents/Davis/R-Projects/aggiedown_dissertation/intro/02_manuscript.Rmd'}
+```

@@ -11,9 +11,9 @@ chair: "Mark Lubell"
 signature1: "Tyler Scott"
 signature2: "Neil McRoberts"
 abstract: |
-  "Overall abstract?"
+  Does this have to be a quotes?
 acknowledgments: |
-  "My acknowledgments"
+  I could not have completed this dissertation without the help of my mentors and academic community. I would first like to thank my committee, Mark Lubell, Tyler Scott, and Neil McRoberts. They have been instrumental in helping me become a more skilled and confident researcher. Likewise, the community at the Center for Environmental Policy have played an enormous role in shaping who I am as an academic. Each and every member of the group has helped hold me accountable to being a rigorous and concientious researcher. I'd also like to thank the Graduate Group in Ecology, 2018 cohort and beyond, for creating an inclusive and outright _fun_ environment for completing the PhD. And the UC Davis DataLab, who have played an important role in supporting my development as a data scientist. 
 
 knit: "bookdown::render_book"
 site: bookdown::bookdown_site
