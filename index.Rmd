@@ -11,9 +11,15 @@ chair: "Mark Lubell"
 signature1: "Tyler Scott"
 signature2: "Neil McRoberts"
 abstract: |
-  Does this have to be a quotes?
-acknowledgments: |
-  I could not have completed this dissertation without the help of my mentors and academic community. I would first like to thank my committee, Mark Lubell, Tyler Scott, and Neil McRoberts. They have been instrumental in helping me become a more skilled and confident researcher. Likewise, the community at the Center for Environmental Policy have played an enormous role in shaping who I am as an academic. Each and every member of the group has helped hold me accountable to being a rigorous and concientious researcher. I'd also like to thank the Graduate Group in Ecology, 2018 cohort and beyond, for creating an inclusive and outright _fun_ environment for completing the PhD. And the UC Davis DataLab, who have played an important role in supporting my development as a data scientist. 
+  The challenges facing agricultural systems – biodiversity loss, climate change, and corporate consolidation of food production, to name a few – demand transitions to more environmentally and socially sustainable agricultural systems. To investigate the processes supporting these transitions, the three chapters of this dissertation combine theories and methods from environmental policy and governance, innovation systems, and social networks to analyze the empirical case of the organic seed system – the actors, institutions, and socio-technical innovations involved in breeding, producing, processing, selling, and regulating seeds suitable for organic agricultural production. 
+
+  Chapter 1 focuses on the so-called "organic seed loophole" in the United States' organic standards, whereby growers can use conventional seed if organic seed is not commercially available, and investigates the effects of this policy on organic growers' seed sourcing choices. By modeling survey data on US organic growers' seed sourcing practices from three cross-sections over the last 15 years, we find evidence for both the intended effects of the policy (helping organic growers who face seed sourcing barriers to maintain organic status) and for unintended effects, i.e. allowing growers to source non-organic seed even though organic seed is commercially available. Chapter 2 maps the spatial boundaries of the organic seed network to test the propositions of the Global Innovation Systems framework. Using survey data of organic seed stakeholders collected between 2020-2022, we operationalize the organic seed innovation system as a multi-functional network. This includes various knowledge and market-based relationships between organic seed producers, researchers, companies, and non-profit organizations. We analyze the network using inferential network analysis methods and find that the framework explains its structure well, as the organic seed network is built up by regionally embedded knowledge creation and product valuation systems. Finally, Chapter 3 analyzes the organic seed innovation system as an emergent system and investigates the role of different types of actors in explaining its formation. Using network analysis and the same data from Chapter 2, we test the resource-based theory of system building and the institutional logics of the multi-actor perspective. We find that the organic seed network is shaped primarily by "partner mode" structures, suggesting that cooperative and complementary resource-sharing relationships drive system formation. Furthermore, our models show how actor involvement varies along functional lines, where non-profit actors are generally more active in pre-competitive activities like knowledge creation, while for-profit actors are more active in market-based functions like value chain creation. 
+
+  The findings of this dissertation research help guide policy recommendations for developing the organic seed system, a niche innovation system that plays a pivotal role in the transition towards sustainable agriculture. Furthermore, the research contributes to the field of innovation systems by empirically testing and extending networking-building theory using inferential network analyses. This approach contributes to a more generalizable understanding about the who, where, and how of innovation system formation, ultimately deepening our understanding of managing sustainability transitions.
+
+
+
+
 
 knit: "bookdown::render_book"
 site: bookdown::bookdown_site
@@ -30,6 +36,11 @@ lot: false
 lof: false
 ---
 
+<!---
+acknowledgments: |
+  I could not have completed this dissertation without the help of my mentors and academic community. I would first like to thank my committee, Mark Lubell, Tyler Scott, and Neil McRoberts, who have helped train me to become a more skilled and confident researcher. Likewise, the community at the Center for Environmental Policy have played an enormous role in shaping who I am as an academic and human being. Each and every member of the group has helped hold me accountable to being a rigorous and concientious researcher. I'd also like to thank the Graduate Group in Ecology, 2018 cohort and beyond, for creating an inclusive and outright _fun_ environment for completing the PhD. And the UC Davis DataLab, who have played an important role in supporting my development as a data scientist. 
+  --->
+  
 <!--
 Above is the YAML (YAML Ain't Markup Language) header that includes a lot of metadata used to produce the document.  Be careful with spacing in this header!
 

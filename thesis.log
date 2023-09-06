@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020) (preloaded format=xelatex 2020.4.7)  5 SEP 2023 19:36
+This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020) (preloaded format=xelatex 2020.4.7)  6 SEP 2023 16:09
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -680,9 +680,7 @@ File: se-ascii-print.def 2019/11/29 v1.12 stringenc: Printable ASCII characters
 ] [3
 
 
-] [4
-
-] (./thesis.toc [5
+] [4] (./thesis.toc [5
 
 ])
 \tf@toc=\write5
@@ -691,133 +689,139 @@ File: se-ascii-print.def 2019/11/29 v1.12 stringenc: Printable ASCII characters
 [6] [1
 
 
-] [2] [3]
-Chapter 1.
-[4
-
-] [5]
-Underfull \vbox (badness 4608) has occurred while \output is active []
-
-[6] [7] [8] [9] [10] [11] [12] [13]
-File: ../organicseed_adoption/figures/figure1.png Graphic file (type bmp)
-<../organicseed_adoption/figures/figure1.png>
-[14]
+]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[15] [16] [17] [18] [19] [20]
+[2] [3] [4]
+Chapter 1.
+[5
+
+] [6]
+Underfull \vbox (badness 4608) has occurred while \output is active []
+
+[7] [8] [9] [10]
+Underfull \vbox (badness 2221) has occurred while \output is active []
+
+[11] [12]
+Underfull \vbox (badness 1259) has occurred while \output is active []
+
+[13] [14]
+File: ../organicseed_adoption/figures/figure1.png Graphic file (type bmp)
+<../organicseed_adoption/figures/figure1.png>
+[15]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[16] [17] [18] [19] [20] [21]
 File: ../organicseed_adoption/figures/figure2.png Graphic file (type bmp)
 <../organicseed_adoption/figures/figure2.png>
 
 Underfull \vbox (badness 4303) has occurred while \output is active []
 
-[21] [22] [23]
+[22] [23] [24]
 File: ../organicseed_adoption/figures/figure3.png Graphic file (type bmp)
 <../organicseed_adoption/figures/figure3.png>
-[24] [25] [26]
+[25] [26] [27]
 Underfull \vbox (badness 4608) has occurred while \output is active []
 
-[27] [28]
-Underfull \vbox (badness 4608) has occurred while \output is active []
-
-[29] [30]
+[28] [29] [30] [31]
 Chapter 2.
-[31
+[32
 
-] [32]
+] [33]
 Underfull \vbox (badness 4608) has occurred while \output is active []
 
-[33] [34] [35]
+[34] [35] [36]
 Underfull \vbox (badness 4608) has occurred while \output is active []
 
-[36] [37]
+[37] [38]
 Underfull \vbox (badness 4608) has occurred while \output is active []
 
-[38]
+[39]
 File: ../osisn_spatial/figures/figure1.jpeg Graphic file (type bmp)
 <../osisn_spatial/figures/figure1.jpeg>
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[39] [40] [41]
+[40] [41] [42] [43] [44] [45]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[42] [43] [44]
+[46]
+Underfull \vbox (badness 2221) has occurred while \output is active []
+
+[47] [48]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[45] [46] [47]
+[49]
+Underfull \vbox (badness 6927) has occurred while \output is active []
+
+[50]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[48] [49]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[50] [51]
+[51] [52]
 Underfull \vbox (badness 4608) has occurred while \output is active []
 
-[52]
+[53]
 File: ../osisn_spatial/figures/figure2.jpeg Graphic file (type bmp)
 <../osisn_spatial/figures/figure2.jpeg>
-[53] [54]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[55] [56] [57]
+[54] [55] [56] [57] [58]
 File: ../osisn_spatial/figures/figure3.png Graphic file (type bmp)
 <../osisn_spatial/figures/figure3.png>
-[58] [59]
+[59] [60]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[60] [61] [62]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+[61] [62]
+Underfull \vbox (badness 4608) has occurred while \output is active []
 
-[63] [64] [65]
+[63] [64] [65] [66]
 Chapter 3.
-[66
+[67
 
 ]
 Underfull \vbox (badness 4608) has occurred while \output is active []
 
-[67]
+[68]
 Underfull \vbox (badness 4608) has occurred while \output is active []
 
-[68] [69]
+[69] [70]
 File: ../osisn_processes/figures/figure1.png Graphic file (type bmp)
 <../osisn_processes/figures/figure1.png>
-[70] [71] [72]
+[71] [72] [73]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[73] [74]
+[74] [75]
 File: ../osisn_processes/figures/figure2.png Graphic file (type bmp)
 <../osisn_processes/figures/figure2.png>
-[75] [76] [77] [78] [79] [80]
+[76] [77] [78] [79] [80] [81]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[81]
+[82]
 Underfull \vbox (badness 3009) has occurred while \output is active []
 
-[82] [83]
+[83] [84]
 Underfull \vbox (badness 4779) has occurred while \output is active []
 
-[84] [85] [86] [87]
+[85] [86] [87] [88]
 File: ../osisn_processes/figures/figure3.png Graphic file (type bmp)
 <../osisn_processes/figures/figure3.png>
-[88]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+[89] [90]
+Underfull \vbox (badness 4608) has occurred while \output is active []
 
-[89] [90] [91] [92] [93]
+[91] [92]
+File: ../osisn_processes/figures/figure4.jpeg Graphic file (type bmp)
+<../osisn_processes/figures/figure4.jpeg>
+
+Underfull \vbox (badness 4279) has occurred while \output is active []
+
+[93] [94] [95]
 File: ../osisn_processes/figures/figure5.png Graphic file (type bmp)
 <../osisn_processes/figures/figure5.png>
 
-Underfull \vbox (badness 4608) has occurred while \output is active []
-
-[94] [95] [96] [97] [98]
-Underfull \vbox (badness 4608) has occurred while \output is active []
-
-[99]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[100]
-Underfull \vbox (badness 1708) has occurred while \output is active []
+[96] [97] [98] [99]
+Underfull \vbox (badness 4608) has occurred while \output is active []
 
-[101] [102]
+[100] [101] [102] [103] [104]
 Appendix A.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
@@ -825,34 +829,34 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[103
+[105
 
 ]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[104]
+[106]
 File: ../organicseed_adoption/figures/figurea1.png Graphic file (type bmp)
 <../organicseed_adoption/figures/figurea1.png>
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[105]
+[107]
 File: ../organicseed_adoption/figures/figurea2.png Graphic file (type bmp)
 <../organicseed_adoption/figures/figurea2.png>
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[106] [107]
+[108] [109]
 Appendix B.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[108
+[110
 
 ]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[109] [110]
+[111] [112]
 File: ../osisn_spatial/figures/figureb2.png Graphic file (type bmp)
 <../osisn_spatial/figures/figureb2.png>
 File: ../osisn_spatial/figures/figureb3_kgof.png Graphic file (type bmp)
@@ -860,34 +864,28 @@ File: ../osisn_spatial/figures/figureb3_kgof.png Graphic file (type bmp)
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[111]
+[113]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[112]
+[114]
 File: ../osisn_spatial/figures/figureb3_vgof.png Graphic file (type bmp)
 <../osisn_spatial/figures/figureb3_vgof.png>
-[113] [114] [115]
+[115] [116] [117]
 Appendix C.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[116
+[118
 
 ]
 File: ../osisn_processes/figures/figurec1.png Graphic file (type bmp)
 <../osisn_processes/figures/figurec1.png>
-[117]
+[119]
 File: ../osisn_processes/figures/figurec2.png Graphic file (type bmp)
 <../osisn_processes/figures/figurec2.png>
 File: ../osisn_processes/figures/figurec3.png Graphic file (type bmp)
 <../osisn_processes/figures/figurec3.png>
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[118]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[119]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [120]
@@ -897,100 +895,119 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [122]
-File: ../osisn_scales/figures/regional_models_k.jpeg Graphic file (type bmp)
-<../osisn_scales/figures/regional_models_k.jpeg>
-File: ../osisn_scales/figures/regional_models_v.jpeg Graphic file (type bmp)
-<../osisn_scales/figures/regional_models_v.jpeg>
-
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [123]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[124] [125] [126
+[124]
+File: ../osisn_scales/figures/regional_models_k.jpeg Graphic file (type bmp)
+<../osisn_scales/figures/regional_models_k.jpeg>
 
-] [127
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[125]
+File: ../osisn_scales/figures/regional_models_v.jpeg Graphic file (type bmp)
+<../osisn_scales/figures/regional_models_v.jpeg>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[126] [127] [128
+
+] [129
 
 
 ]
-Overfull \hbox (8.59198pt too wide) in paragraph at lines 4353--4355
+Overfull \hbox (8.59198pt too wide) in paragraph at lines 4407--4409
 [][][][][][] [] [][][][][][][][][] [] [][][][] [] [][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
 [] []
  []
 
-[128]
-Underfull \hbox (badness 2351) in paragraph at lines 4386--4388
+
+Underfull \vbox (badness 1231) has occurred while \output is active []
+
+[130]
+Underfull \hbox (badness 2351) in paragraph at lines 4443--4445
 []\TU/lmr/m/n/12 Board, National Organic Standards. 2006. \TU/lmr/m/it/12 Sunse
 t Review - 205.601 Syn-
  []
 
 
-Underfull \hbox (badness 2726) in paragraph at lines 4386--4388
+Underfull \hbox (badness 2726) in paragraph at lines 4443--4445
 \TU/lmr/m/it/12 thetic Substances Allowed for Use in Organic Crop Production\TU
 /lmr/m/n/12 . [][]$[][][][][] []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4386--4388
+Underfull \hbox (badness 10000) in paragraph at lines 4443--4445
 [] [] [][][] [] [][][] [] [][][][] [] [][][] [] [][][][][] [] [][][][][][][] []
  [][][][][] [] [][][][][] [] [][][] [] [][][][][][][][] [] [][][][][] []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4389--4391
+Underfull \hbox (badness 10000) in paragraph at lines 4446--4448
 [][][] [] [][][][][] [] [][][][][][][] [] [][][][][] [] [][][][][] [] [][][] []
  [][][][][][][] [] [][][][][] [] [][][][][][] [] [][][][][][][][][][][][] []
  []
 
-[129] [130]
-Overfull \hbox (116.41586pt too wide) in paragraph at lines 4434--4436
+[131] [132]
+Overfull \hbox (116.41586pt too wide) in paragraph at lines 4491--4493
 [][]$[][][][][] [] [] [] [][][] [] [][][][][][][][][][][][][][][] [] [][][] [] 
 [][][][][][][][][][] [] [][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][]$[][]\TU/lmr/m/n/12 . 
  []
 
 
-Overfull \hbox (41.172pt too wide) in paragraph at lines 4437--4439
+Overfull \hbox (41.172pt too wide) in paragraph at lines 4494--4496
 [][]$[][][][][] [] [] [] [][][][][][][][] [] [][][] [] [][] [] [][] [] [][][][]
 [][][][][][][][] [] [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][]$[][]\TU/lmr/m/n/12 . 
  []
 
-[131] [132] [133] [134] [135] [136]
-Underfull \hbox (badness 10000) in paragraph at lines 4602--4604
+[133] [134] [135]
+Underfull \vbox (badness 3260) has occurred while \output is active []
+
+[136] [137]
+Underfull \vbox (badness 1231) has occurred while \output is active []
+
+[138] [139]
+Underfull \hbox (badness 10000) in paragraph at lines 4665--4667
 [][][][][][][][][][][] [] [][][][][][][] [] [][][][] [] [][] [] [][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] []
  []
 
-[137] [138] [139] [140]
-Overfull \hbox (281.09567pt too wide) in paragraph at lines 4698--4700
+[140] [141] [142]
+Overfull \hbox (281.09567pt too wide) in paragraph at lines 4764--4766
 [][][][][][][][][][][][][][] [] [][][] [] [][][][][][][][] [] [][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][]$[][]\TU/lmr/m/n/12 . 
  []
 
-[141] [142]
-Missing character: There is no ̍ in font [lmroman12-italic]:mapping=tex-text;!
 [143]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 4787.
+Underfull \vbox (badness 1231) has occurred while \output is active []
+
 [144]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 4787.
+Missing character: There is no ̍ in font [lmroman12-italic]:mapping=tex-text;!
+[145] [146]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 4859.
+[147]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 4859.
 (./thesis.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 4787.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 4787.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 4859.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 4859.
 
 Package rerunfilecheck Info: File `thesis.out' has not changed.
 (rerunfilecheck)             Checksum: 9B40F62FE1DC61544FC35D4613F6955B;2999.
  ) 
 Here is how much of TeX's memory you used:
- 19342 strings out of 479418
- 342398 string characters out of 5884586
- 659881 words of memory out of 5000000
- 36552 multiletter control sequences out of 15000+600000
+ 19356 strings out of 479418
+ 342968 string characters out of 5884586
+ 660202 words of memory out of 5000000
+ 36565 multiletter control sequences out of 15000+600000
  542276 words of font info for 83 fonts, out of 8000000 for 9000
  1349 hyphenation exceptions out of 8191
- 44i,16n,50p,1043b,843s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 44i,16n,50p,2181b,843s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on thesis.pdf (150 pages).
+Output written on thesis.pdf (153 pages).

@@ -1,4 +1,5 @@
-Bergek, Anna et al. 2008. "Analyzing the Functional Dynamics of Technological Innovation Systems: A Scheme of Analysis." Research Policy 37(3): 407--29.
+Avelino, Flor, and Julia M. Wittmayer. 2016. "Shifting Power Relations in Sustainability Transitions: A Multi-Actor Perspective." Journal of Environmental Policy & Planning 18(5): 628--49.
+ Bergek, Anna et al. 2008. "Analyzing the Functional Dynamics of Technological Innovation Systems: A Scheme of Analysis." Research Policy 37(3): 407--29.
  Binz, Christian, and Bernhard Truffer. 2017. "Global Innovation Systems---A Conceptual Framework for Innovation Dynamics in Transnational Contexts." Research Policy 46(7): 1284--98.
  Buttel, Frederick H., Gilbert W. Gillespie Jr, and Olaf F. Larson. 1990. The Sociology of Agriculture: y First printing edition. New York: Praeger.
  Colley, Micaela Ruth. 2022. "Critical Experiences in Participatory Approaches to Build up Organic Plant Breeding and Seed Systems." Wageningen University. https://research.wur.nl/en/publications/09218969-dc06-4fe9-91af-db058becaa3b (January 4, 2023).
@@ -6,7 +7,6 @@ Bergek, Anna et al. 2008. "Analyzing the Functional Dynamics of Technological In
  Hebinck, Aniek et al. 2021. "Beyond Food for Thought -- Directing Sustainability Transitions Research to Address Fundamental Change in Agri-Food Systems." Environmental Innovation and Societal Transitions 41: 81--85.
  Hubbard, Kiki, and Jared Zystro. 2016. State of Organic Seed 2016. Organic Seed Alliance. http://seedalliance.org/index.php?mact=DocumentStore,cntnt01,download_form,0&cntnt01pid=7&cntnt01returnid=139.
  Hubbard, Kiki, Jared Zystro, and Liza Wood. 2022. State of Organic Seed. Port Townsend, WA: Organic Seed Alliance.
- Jacobsson, Staffan, and Anna Bergek. 2011. "Innovation System Analyses and Sustainability Transitions: Contributions and Suggestions for Research." Environmental Innovation and Societal Transitions 1(1): 41--57.
  Klerkx, Laureans, Barbara van Mierlo, and Cees Leeuwis. 2012. "Evolution of Systems Approaches to Agricultural Innovation: Concepts, Analysis and Interventions." In Farming Systems Research into the 21st Century: The New Dynamic, eds. Ika Darnhofer, David Gibbon, and Benoit Dedieu. , 457--83.
  Lammerts van Bueren, Edith T., Paul C. Struik, Nick van Eekeren, and Edwin Nuijten. 2018. "Towards Resilience through Systems-Based Plant Breeding. A Review." Agronomy for Sustainable Development 38(5).
  Musiolik, Jörg, Jochen Markard, Marko Hekkert, and Bettina Furrer. 2020. "Creating Innovation Systems: How Resource Constellations Affect the Strategies of System Builders." Technological Forecasting and Social Change 153: 119209.

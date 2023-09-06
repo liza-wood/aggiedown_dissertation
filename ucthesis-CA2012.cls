@@ -365,12 +365,12 @@
 %}{}
 
 % ACKNOWLEDGEMENTS
-\newenvironment{acknowledgements}{
-  \if@openright\cleardoublepage \else\clearpage \fi
-  \begin{center} {\large \bfseries \acknowledgename}
-  \end{center}
-  \ifnum \@draftmark = 1    \ssp \else  \dsp \fi
-}{}
+%\newenvironment{acknowledgements}{
+%  \if@openright\cleardoublepage \else\clearpage \fi
+%  \begin{center} {\large \bfseries \acknowledgename}
+%  \end{center}
+%  \ifnum \@draftmark = 1    \ssp \else  \dsp \fi
+%}{}
 
 % DISCLAIMER
 \newenvironment{disclaimer}{
