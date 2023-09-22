@@ -3,7 +3,7 @@ title: "The organic seed innovation system: Unpacking the who, where, and how of
 author: "Liza Wood"
 year: "2023"
 month: "September"
-program: "ECOLOGY"
+program: "Ecology"
 uccampus: "DAVIS"
 report: "DISSERTATION"
 degree: "DOCTOR OF PHILOSOPHY"

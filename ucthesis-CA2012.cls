@@ -236,7 +236,7 @@
   % \null\vfil
   
   \begin{center}
-    \fmfont {\bfseries\large {\@title} \par}   % Formatting of the Dissertation title
+    \fmfont {\large {\@title} \par}   % Formatting of the Dissertation title
     \smallskip \vspace{2ex}
     By \par
     \medskip \MakeUppercase{\@author} \par
@@ -266,13 +266,13 @@
     \medskip \par
     \bigskip \par
     $\:\overline{~~~~ \mbox{\rule{0in}{0.05in} \hspace{3.25in}}}\:$ \\
-    {(\@chair)}, Chair \\
+    {\@chair}, Chair \\
     \vskip 2em
     $\:\overline{~~~~ \mbox{\rule{0in}{0.05in} \hspace{3.25in}}}\:$ \\
-    {(\@othermemberA}) \\ 
+    {\@othermemberA} \\ 
     \vskip 2em
     $\:\overline{~~~~ \mbox{\rule{0in}{0.05in} \hspace{3.25in}}}\:$ \\
-    {(\@othermemberB}) \\
+    {\@othermemberB} \\
     \vskip 2em
     % add additional members as needed
     Committee in Charge \par
