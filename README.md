@@ -5,7 +5,7 @@ This is a personal repository for my University of California, Davis PhD thesis,
 * Chapter 2: www.github.com/liza-wood/osisn_spatial
 * Chapter 3: www.github.com/liza-wood/osisn_processes
 
-This repository adds to the recommended `aggiedown` model by creating two functions in the prep_papers.R script. These functions read in chapter text and embedded figures and tables written in Google docs, rather than writing chapters directly into an RMarkdown document. A draft explanation of how this works is reported in my tutorial on [converted Google docs into LaTeX report via `aggiedown`](https://liza-wood.github.io/posts/googledoc-aggiedown.html). 
+This repository adds to the recommended `aggiedown` model by creating two functions in the prep_papers.R script. These functions read in chapter text and embedded figures and tables written in Google docs, rather than writing chapters directly into an RMarkdown document. A draft explanation of how this works is reported in my tutorial on [converting Google docs into a LaTeX report via `aggiedown`](https://liza-wood.github.io/posts/googledoc-aggiedown.html). 
 
 
 
