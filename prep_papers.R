@@ -274,7 +274,7 @@ prep_papers(ch2url, ch2path)
 prep_papers(ch3url, ch3path)
 
 
-# If the setting in Google docs is bibtext, I can make my bibfile automatically by combining each bib
+# If the setting in Google docs is bibtex, I can make my bibfile automatically by combining each bib
 auto_bib_file <- function(){
   bib0 <- readtext::readtext(paste0(intropath,'04_refs.bib'))$text
   bib1 <- readtext::readtext(paste0(ch1path,'04_refs.bib'))$text
